@@ -1075,7 +1075,7 @@
     "difficulty": "mittel",
     "explanation": "Der Mensch nimmt als akzidenteller Zwischenwirt (Fehlwirt) die Eier oral auf, analog zum eigentlichen Zwischenwirt Nager.",
     "source": "Echinococcus multilocularis – Endwirt/Zwischenwirt",
-    "needsReview": true,
+    "needsReview": false,
     "image": null,
     "options": [
       "Orale Aufnahme von Eiern, z. B. über kontaminierte Waldfrüchte oder Fuchskot-Kontakt",
@@ -4860,7 +4860,7 @@
     "difficulty": "schwer",
     "explanation": "Ivermectin wirkt gegen somatische Larvenstadien, sollte aber laut Quelle wiederholt (2x/Jahr) gegeben werden, um kontinuierlich neu wandernde Larven zu erfassen.",
     "source": "Große Strongyliden – Bekämpfung (Therapie)",
-    "needsReview": true,
+    "needsReview": false,
     "image": null,
     "options": [
       "Um kontinuierlich neu wandernde Larvenstadien zu erfassen",
