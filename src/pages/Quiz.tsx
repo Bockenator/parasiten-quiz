@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { de } from '../i18n/de';
+import { filterQuestions } from '../lib/filterQuestions';
 import { loadQuestions } from '../lib/loadContent';
 import { selectLearnSession } from '../lib/selectSession';
 import { createInitialProgress, qualityFromCorrect, updateCardProgress } from '../lib/srs';
-import { getAllProgress, getProgress, saveProgress } from '../lib/storage';
+import { getAllProgress, getCategorySelection, getProgress, saveProgress } from '../lib/storage';
 import type { Question } from '../types';
 import { QuestionCard } from '../components/QuestionCard';
 import { PrimaryButton } from '../components/PrimaryButton';
@@ -13,7 +14,8 @@ type LoadState =
   | { status: 'loading' }
   | { status: 'error' }
   | { status: 'empty' }
-  | { status: 'ready'; allQuestions: Question[] };
+  | { status: 'filtered-empty' }
+  | { status: 'ready'; filteredQuestions: Question[] };
 
 export function Quiz() {
   const navigate = useNavigate();
@@ -32,8 +34,13 @@ export function Quiz() {
           setLoadState({ status: 'empty' });
           return;
         }
-        setLoadState({ status: 'ready', allQuestions: questions });
-        setSession(selectLearnSession(questions, getAllProgress()));
+        const filteredQuestions = filterQuestions(questions, getCategorySelection());
+        if (filteredQuestions.length === 0) {
+          setLoadState({ status: 'filtered-empty' });
+          return;
+        }
+        setLoadState({ status: 'ready', filteredQuestions });
+        setSession(selectLearnSession(filteredQuestions, getAllProgress()));
       })
       .catch(() => {
         if (!cancelled) setLoadState({ status: 'error' });
@@ -45,7 +52,7 @@ export function Quiz() {
 
   function restart() {
     if (loadState.status !== 'ready') return;
-    setSession(selectLearnSession(loadState.allQuestions, getAllProgress()));
+    setSession(selectLearnSession(loadState.filteredQuestions, getAllProgress()));
     setIndex(0);
     setCorrectCount(0);
     setFinished(false);
@@ -71,7 +78,19 @@ export function Quiz() {
   if (loadState.status === 'error') {
     return <StatusMessage text={de.quiz.loadError} />;
   }
-  if (loadState.status === 'empty' || session.length === 0) {
+  if (loadState.status === 'empty') {
+    return <StatusMessage text={de.quiz.empty} />;
+  }
+  if (loadState.status === 'filtered-empty') {
+    return (
+      <div className="mx-auto flex max-w-md flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
+        <h1 className="text-xl font-semibold">{de.quiz.filteredEmptyTitle}</h1>
+        <p className="text-slate-600 dark:text-slate-300">{de.quiz.filteredEmptyText}</p>
+        <PrimaryButton onClick={() => navigate('/kategorien')}>{de.quiz.adjustCategories}</PrimaryButton>
+      </div>
+    );
+  }
+  if (session.length === 0) {
     return <StatusMessage text={de.quiz.empty} />;
   }
 

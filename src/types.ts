@@ -249,3 +249,27 @@ export type FlashcardQuestion = Extract<Question, { type: 'flashcard' }>;
 export type CaseVignetteQuestion = Extract<Question, { type: 'case_vignette' }>;
 
 export const questionsSchema = z.array(questionSchema);
+
+// Nutzerauswahl auf der Kategorien-Seite (Plan Abschnitt 5): pro Dimension eine
+// Liste ausgewählter Werte (ODER innerhalb der Dimension), leer = kein Filter.
+// Die Dimensionen across werden UND-verknüpft. `onlyTopImportance` ist der
+// Schnellfilter "Nur ***" und liegt außerhalb des Tag-Modells (importance ist
+// kein Tag, sondern ein eigenes Feld auf der Frage).
+export const categorySelectionSchema = z.object({
+  class: z.array(z.string()),
+  subclass: z.array(z.string()),
+  host: z.array(z.string()),
+  topic: z.array(z.string()),
+  flags: z.array(z.string()),
+  onlyTopImportance: z.boolean(),
+});
+export type CategorySelection = z.infer<typeof categorySelectionSchema>;
+
+export const defaultCategorySelection: CategorySelection = {
+  class: [],
+  subclass: [],
+  host: [],
+  topic: [],
+  flags: [],
+  onlyTopImportance: false,
+};

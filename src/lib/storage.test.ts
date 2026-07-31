@@ -1,6 +1,14 @@
 import { beforeEach, describe, expect, it } from 'vitest';
+import { defaultCategorySelection } from '../types';
 import { createInitialProgress } from './srs';
-import { getAllProgress, getProgress, resetAllProgress, saveProgress } from './storage';
+import {
+  getAllProgress,
+  getCategorySelection,
+  getProgress,
+  resetAllProgress,
+  saveCategorySelection,
+  saveProgress,
+} from './storage';
 
 beforeEach(() => {
   localStorage.clear();
@@ -40,5 +48,20 @@ describe('storage', () => {
     saveProgress(createInitialProgress('q_1'));
     resetAllProgress();
     expect(getAllProgress()).toEqual({});
+  });
+
+  it('returns the default (unfiltered) category selection when nothing was saved yet', () => {
+    expect(getCategorySelection()).toEqual(defaultCategorySelection);
+  });
+
+  it('round-trips a saved category selection', () => {
+    const selection = { ...defaultCategorySelection, class: ['nematoden'], flags: ['zoonose'] };
+    saveCategorySelection(selection);
+    expect(getCategorySelection()).toEqual(selection);
+  });
+
+  it('falls back to the default category selection when the stored value fails schema validation', () => {
+    localStorage.setItem('paraquiz:categorySelection:v1', JSON.stringify({ nonsense: true }));
+    expect(getCategorySelection()).toEqual(defaultCategorySelection);
   });
 });

@@ -1,26 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import type { Importance, ProgressMap, Question } from '../types';
+import type { ProgressMap } from '../types';
 import { createInitialProgress, updateCardProgress } from './srs';
 import { selectExamSession, selectLearnSession } from './selectSession';
+import { makeQuestion } from './testUtils';
 
 const today = new Date('2026-01-10T00:00:00.000Z');
-
-function makeQuestion(id: string, importance: Importance = 2): Question {
-  return {
-    id,
-    type: 'true_false',
-    prompt: `Testfrage ${id}`,
-    parasite: 'Testparasit',
-    tags: { class: ['trematoden'], subclass: [], host: ['wiederkaeuer'], topic: ['klinik'], flags: [] },
-    importance,
-    difficulty: 'mittel',
-    explanation: 'Weil...',
-    source: 'Testquelle',
-    needsReview: false,
-    image: null,
-    answer: true,
-  };
-}
 
 describe('selectLearnSession', () => {
   it('puts due cards before brand-new cards, and both before not-yet-due cards', () => {
@@ -50,22 +34,22 @@ describe('selectLearnSession', () => {
   });
 
   it('introduces new cards by importance, highest first', () => {
-    const low = makeQuestion('low', 1);
-    const high = makeQuestion('high', 3);
-    const mid = makeQuestion('mid', 2);
+    const low = makeQuestion('low', { importance: 1 });
+    const high = makeQuestion('high', { importance: 3 });
+    const mid = makeQuestion('mid', { importance: 2 });
 
     const session = selectLearnSession([low, mid, high], {}, { today, maxNew: 3 });
     expect(session.map((q) => q.id)).toEqual(['high', 'mid', 'low']);
   });
 
   it('limits new cards to maxNew', () => {
-    const questions = Array.from({ length: 5 }, (_, i) => makeQuestion(`q_${i}`, 2));
+    const questions = Array.from({ length: 5 }, (_, i) => makeQuestion(`q_${i}`, { importance: 2 }));
     const session = selectLearnSession(questions, {}, { today, maxNew: 2 });
     expect(session).toHaveLength(2);
   });
 
   it('caps the total session size', () => {
-    const questions = Array.from({ length: 10 }, (_, i) => makeQuestion(`q_${i}`, 2));
+    const questions = Array.from({ length: 10 }, (_, i) => makeQuestion(`q_${i}`, { importance: 2 }));
     const session = selectLearnSession(questions, {}, { today, maxNew: 10, sessionSize: 3 });
     expect(session).toHaveLength(3);
   });
