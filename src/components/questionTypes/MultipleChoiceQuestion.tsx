@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { de } from '../../i18n/de';
 import type { MultipleChoiceQuestion as MultipleChoiceQuestionType } from '../../types';
 import { PrimaryButton } from '../PrimaryButton';
 import type { QuestionTypeProps } from './types';
 import { optionButtonClasses } from './optionStyles';
+import { shuffleOptions } from '../../lib/shuffleOptions';
 
 function arraysHaveSameMembers(a: number[], b: number[]): boolean {
   if (a.length !== b.length) return false;
@@ -13,6 +14,13 @@ function arraysHaveSameMembers(a: number[], b: number[]): boolean {
 
 export function MultipleChoiceQuestion({ question, submitted, onSubmit }: QuestionTypeProps<MultipleChoiceQuestionType>) {
   const [selected, setSelected] = useState<Set<number>>(new Set());
+  // Shuffled once per question instance (QuestionCard remounts via key={question.id}) so
+  // the correct answers aren't always in the same positions as authored in the content.
+  const { options, newIndexOf } = useMemo(() => shuffleOptions(question.options), [question.id, question.options]);
+  const correctIndices = useMemo(
+    () => question.correctIndices.map((index) => newIndexOf[index]),
+    [question.correctIndices, newIndexOf],
+  );
 
   function toggle(index: number) {
     setSelected((prev) => {
@@ -24,16 +32,16 @@ export function MultipleChoiceQuestion({ question, submitted, onSubmit }: Questi
   }
 
   function handleCheck() {
-    onSubmit(arraysHaveSameMembers([...selected], question.correctIndices));
+    onSubmit(arraysHaveSameMembers([...selected], correctIndices));
   }
 
   return (
     <div>
       <p className="text-lg font-medium">{question.prompt}</p>
       <div className="mt-4 flex flex-col gap-2">
-        {question.options.map((option, index) => {
+        {options.map((option, index) => {
           const isSelected = selected.has(index);
-          const isCorrectOption = question.correctIndices.includes(index);
+          const isCorrectOption = correctIndices.includes(index);
           let state: 'idle' | 'selected' | 'correct' | 'incorrect' = 'idle';
           if (submitted) {
             state = isCorrectOption ? 'correct' : isSelected ? 'incorrect' : 'idle';

@@ -1,18 +1,23 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { de } from '../../i18n/de';
 import type { CaseVignetteQuestion, SingleChoiceQuestion } from '../../types';
 import { PrimaryButton } from '../PrimaryButton';
 import type { QuestionTypeProps } from './types';
 import { optionButtonClasses } from './optionStyles';
+import { shuffleOptions } from '../../lib/shuffleOptions';
 
 type Props = QuestionTypeProps<SingleChoiceQuestion | CaseVignetteQuestion> & { badge?: string };
 
 export function ChoiceQuestion({ question, submitted, onSubmit, badge }: Props) {
   const [selected, setSelected] = useState<number | null>(null);
+  // Shuffled once per question instance (QuestionCard remounts via key={question.id}) so
+  // the correct answer isn't always in the same position as authored in the content.
+  const { options, newIndexOf } = useMemo(() => shuffleOptions(question.options), [question.id, question.options]);
+  const correctIndex = newIndexOf[question.correctIndex];
 
   function handleCheck() {
     if (selected === null) return;
-    onSubmit(selected === question.correctIndex);
+    onSubmit(selected === correctIndex);
   }
 
   return (
@@ -24,9 +29,9 @@ export function ChoiceQuestion({ question, submitted, onSubmit, badge }: Props) 
       )}
       <p className="text-lg font-medium">{question.prompt}</p>
       <div className="mt-4 flex flex-col gap-2">
-        {question.options.map((option, index) => {
+        {options.map((option, index) => {
           const isSelected = selected === index;
-          const isCorrectOption = index === question.correctIndex;
+          const isCorrectOption = index === correctIndex;
           let state: 'idle' | 'selected' | 'correct' | 'incorrect' = 'idle';
           if (submitted) {
             state = isCorrectOption ? 'correct' : isSelected ? 'incorrect' : 'idle';
