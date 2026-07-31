@@ -223,6 +223,21 @@ export const questionSchema = questionUnionSchema.superRefine((q, ctx) => {
 export type Question = z.infer<typeof questionUnionSchema>;
 export type QuestionType = Question['type'];
 
+// Spaced-Repetition-Fortschritt pro Frage (SM-2), siehe src/lib/srs.ts.
+export const cardProgressSchema = z.object({
+  id: z.string().min(1),
+  ease: z.number(),
+  intervalDays: z.number().min(0),
+  repetitions: z.number().int().min(0),
+  due: z.string().min(1), // Datum als YYYY-MM-DD
+  lastQuality: z.number().int().min(0).max(5),
+  history: z.array(z.object({ date: z.string().min(1), quality: z.number().int().min(0).max(5) })),
+});
+export type CardProgress = z.infer<typeof cardProgressSchema>;
+
+export const progressMapSchema = z.record(z.string(), cardProgressSchema);
+export type ProgressMap = z.infer<typeof progressMapSchema>;
+
 export type SingleChoiceQuestion = Extract<Question, { type: 'single_choice' }>;
 export type MultipleChoiceQuestion = Extract<Question, { type: 'multiple_choice' }>;
 export type TrueFalseQuestion = Extract<Question, { type: 'true_false' }>;

@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { de } from '../i18n/de';
 import { loadQuestions } from '../lib/loadContent';
-import { buildTempSession } from '../lib/tempSession';
+import { selectLearnSession } from '../lib/selectSession';
+import { createInitialProgress, qualityFromCorrect, updateCardProgress } from '../lib/srs';
+import { getAllProgress, getProgress, saveProgress } from '../lib/storage';
 import type { Question } from '../types';
 import { QuestionCard } from '../components/QuestionCard';
 import { PrimaryButton } from '../components/PrimaryButton';
@@ -31,7 +33,7 @@ export function Quiz() {
           return;
         }
         setLoadState({ status: 'ready', allQuestions: questions });
-        setSession(buildTempSession(questions));
+        setSession(selectLearnSession(questions, getAllProgress()));
       })
       .catch(() => {
         if (!cancelled) setLoadState({ status: 'error' });
@@ -43,15 +45,19 @@ export function Quiz() {
 
   function restart() {
     if (loadState.status !== 'ready') return;
-    setSession(buildTempSession(loadState.allQuestions));
+    setSession(selectLearnSession(loadState.allQuestions, getAllProgress()));
     setIndex(0);
     setCorrectCount(0);
     setFinished(false);
   }
 
   function handleNext(correct: boolean) {
-    const nextCorrectCount = correct ? correctCount + 1 : correctCount;
-    setCorrectCount(nextCorrectCount);
+    const question = session[index];
+    const quality = qualityFromCorrect(correct);
+    const existing = getProgress(question.id) ?? createInitialProgress(question.id);
+    saveProgress(updateCardProgress(existing, quality));
+
+    setCorrectCount((count) => (correct ? count + 1 : count));
     if (index + 1 >= session.length) {
       setFinished(true);
     } else {
