@@ -64,10 +64,10 @@ function App() {
             to={item.to}
             end={item.end}
             className={({ isActive }) =>
-              `flex-1 px-1 py-2 text-center text-xs font-medium ${
+              `flex-1 px-1 py-3 text-center text-sm font-bold transition-colors ${
                 isActive
                   ? 'text-teal-600 dark:text-teal-400'
-                  : 'text-slate-500 dark:text-slate-400'
+                  : 'text-slate-500 hover:text-teal-600 dark:text-slate-400 dark:hover:text-teal-400'
               }`
             }
           >
