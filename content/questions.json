@@ -14756,5 +14756,3374 @@
       "Capillaria obsignata"
     ],
     "correctIndex": 0
+  },
+  {
+    "id": "q_0446",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Giardia duodenalis",
+    "prompt": "Wie viele Trophozoiten entstehen aus einer Giardia-Cyste im Dünndarm?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "1"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund",
+        "katze",
+        "wiederkaeuer",
+        "schwein",
+        "mensch"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Aus einer 4-kernigen Cyste entstehen durch longitudinale Zweiteilung 2 Trophozoiten.",
+    "source": "Giardia duodenalis – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0447",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Giardia duodenalis",
+    "prompt": "Giardia duodenalis ist eine Zoonose.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund",
+        "katze",
+        "wiederkaeuer",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Zoonoseerreger sind die Genotypen A1 und B3; Übertragung erfolgt fäkal-oral, z. B. über kontaminiertes Trinkwasser.",
+    "source": "Giardia duodenalis – Zoonose"
+  },
+  {
+    "id": "q_0448",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Giardia duodenalis",
+    "prompt": "Wo siedeln sich die Trophozoiten von Giardia duodenalis im Wirt an?",
+    "options": [
+      "Duodenum, proximaler Jejunum",
+      "Dickdarm",
+      "Leber",
+      "Lunge"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund",
+        "katze",
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Die Trophozoiten siedeln sich auf der Schleimhautoberfläche des Duodenums und des proximalen Jejunums an.",
+    "source": "Giardia duodenalis – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0449",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Giardia duodenalis",
+    "prompt": "Welche Nachweismethode ist bei Giardia duodenalis sensitiver als die klassische Flotation?",
+    "options": [
+      "Giardia-Kopro-AG-Schnelltest",
+      "Röntgen",
+      "Blutausstrich",
+      "Hauttest"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "diagnose"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Der Giardia-Kopro-AG-Schnelltest ist sensitiver als die Flotation, wird aber bei symptomlosen Tieren meist nicht als Behandlungsindikation genutzt.",
+    "source": "Giardia duodenalis – Diagnose"
+  },
+  {
+    "id": "q_0450",
+    "needsReview": false,
+    "image": null,
+    "type": "cloze",
+    "parasite": "Giardia duodenalis",
+    "prompt": "Bei starkem Befall mit Giardia duodenalis beim Fleischfresser kommt es typischerweise zu dünnbreiigem, wässrigem Kot und ______ (Fettausscheidung).",
+    "answer": "Steatorrhö",
+    "acceptedAnswers": [
+      "Steatorrhoe"
+    ],
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Bei Fleischfressern äußert sich die Giardiose u. a. durch dünnbreiigen, wässrigen Kot mit Steatorrhö (Fettausscheidung), Schleim und ggf. Blutbeimengungen.",
+    "source": "Giardia duodenalis – Klinik"
+  },
+  {
+    "id": "q_0451",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Giardia duodenalis",
+    "prompt": "Welches Therapeutikum wird bei Giardia duodenalis beim Tier eingesetzt?",
+    "options": [
+      "Fenbendazol",
+      "Ivermectin",
+      "Praziquantel",
+      "Toltrazuril"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund",
+        "katze",
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Fenbendazol (3–5 Tage) bzw. Febantel werden zur Behandlung eingesetzt; wegen häufiger Rezidive ist oft eine Wiederholung nach 2–3 Wochen nötig.",
+    "source": "Giardia duodenalis – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0452",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Histomonas meleagridis",
+    "prompt": "Welcher Nematode fungiert als Vektor für Histomonas meleagridis?",
+    "options": [
+      "Heterakis gallinarum",
+      "Ascaridia galli",
+      "Capillaria spp.",
+      "Syngamus trachea"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Heterakis gallinarum dient als Vektor: Histomonaden werden in seinen Eiern über Jahre infektiös übertragen.",
+    "source": "Histomonas meleagridis – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0453",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Histomonas meleagridis",
+    "prompt": "Truthühner sind deutlich empfänglicher für Histomonas meleagridis als Hühner.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Hühner sind deutlich weniger anfällig und gelten als Reservoirwirte, während Truthühner (v. a. Jungputen) schwer erkranken.",
+    "source": "Histomonas meleagridis – Immunologie"
+  },
+  {
+    "id": "q_0454",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Histomonas meleagridis",
+    "prompt": "Wie wird die von Histomonas meleagridis verursachte Erkrankung umgangssprachlich genannt?",
+    "options": [
+      "Schwarzkopfkrankheit",
+      "Rote Kükenruhr",
+      "Gelber Knopf",
+      "Weiderot"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Die Histomonose wird wegen der gelegentlich beobachteten Zyanose der Kopfanhänge auch Schwarzkopfkrankheit genannt.",
+    "source": "Histomonas meleagridis – Klinik"
+  },
+  {
+    "id": "q_0455",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Histomonas meleagridis",
+    "prompt": "Welche Organveränderung ist typisch für die hämatogene Wanderung von Histomonas meleagridis?",
+    "options": [
+      "Scharf abgegrenzte, nekrotische Leberherde",
+      "Verkalkte Nierensteine",
+      "Diffuse Lungenfibrose",
+      "Ösophagusdivertikel"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Die hämatogene Wanderung führt zu scharf abgegrenzten, rot umrandeten, gelblich-weißen Nekroseherden in der Leber.",
+    "source": "Histomonas meleagridis – Pathogenese/Pathologie"
+  },
+  {
+    "id": "q_0456",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Histomonas meleagridis",
+    "prompt": "Gegen Histomonas meleagridis steht derzeit eine wirksame Impfung zur Verfügung.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "prophylaxe"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Eine Impfung ist zurzeit noch nicht möglich; die Prophylaxe stützt sich auf Haltungs- und Hygienemaßnahmen sowie die Bekämpfung von Heterakis.",
+    "source": "Histomonas meleagridis – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0457",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Trichomonas gallinae",
+    "prompt": "Bei welcher Vogelart tritt Trichomonas gallinae am häufigsten auf?",
+    "options": [
+      "Haustauben",
+      "Enten",
+      "Gänse",
+      "Straußen"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Trichomonas gallinae kommt weltweit vor allem bei Haustauben vor, mit einer Prävalenz von bis zu 80 %.",
+    "source": "Trichomonas gallinae – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0458",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Trichomonas gallinae",
+    "prompt": "Wodurch stecken sich Jungtauben typischerweise mit Trichomonas gallinae an?",
+    "options": [
+      "Über die Kropfmilch der Alttauben",
+      "Über Zeckenstiche",
+      "Diaplazentar",
+      "Über Regenwürmer"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die Übertragung auf Jungtauben erfolgt vorwiegend über die Kropfmilch der Alttauben.",
+    "source": "Trichomonas gallinae – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0459",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Trichomonas gallinae",
+    "prompt": "Wie wird die Rachen-Kropf-Form der aviären Trichomonose umgangssprachlich genannt?",
+    "options": [
+      "Gelber Knopf",
+      "Schwarzkopfkrankheit",
+      "Rote Kükenruhr",
+      "Weiderot"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Die Rachen-Kropf-Form zeigt gelbliche, käsige Nekroseherde und wird deshalb „Gelber Knopf“ genannt.",
+    "source": "Trichomonas gallinae – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0460",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Tritrichomonas foetus",
+    "prompt": "Wie wird Tritrichomonas foetus beim Rind hauptsächlich übertragen?",
+    "options": [
+      "Beim Deckakt",
+      "Über kontaminiertes Futter",
+      "Über Zeckenstiche",
+      "Diaplazentar"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Tritrichomonas foetus wird beim Rind als Deckseuche über den Deckakt übertragen; wichtigste Infektionsquelle sind inapparent infizierte Bullen.",
+    "source": "Tritrichomonas foetus – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0461",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Tritrichomonas foetus",
+    "prompt": "Die Rindertritrichomonose ist beim Rind anzeigepflichtig.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "diagnose"
+      ],
+      "flags": [
+        "anzeigepflichtig"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die Tritrichomonose des Rindes ist eine anzeigepflichtige Tierseuche; die Anzeige muss schon bei Verdacht erfolgen.",
+    "source": "Tritrichomonas foetus – Diagnose"
+  },
+  {
+    "id": "q_0462",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Tritrichomonas foetus",
+    "prompt": "Welche klinische Folge hat eine Tritrichomonose-Infektion der Kuh häufig?",
+    "options": [
+      "Frühaborte",
+      "Gelenkentzündung",
+      "Lungenödem",
+      "Nierenversagen"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die Uterusbesiedlung führt typischerweise zu Frühaborten (2–4 Monate nach dem Deckakt).",
+    "source": "Tritrichomonas foetus – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0463",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Tritrichomonas foetus",
+    "prompt": "Welche sichere Prophylaxemaßnahme verhindert die Deckseuche durch Tritrichomonas foetus beim Rind?",
+    "options": [
+      "Künstliche Besamung",
+      "Impfung mit Lebendvakzine",
+      "Wöchentliche Entwurmung",
+      "Fliegenschutznetze"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "prophylaxe"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Die künstliche Besamung ist die sicherste Methode zur Verhütung der Deckseuche.",
+    "source": "Tritrichomonas foetus – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0464",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Tritrichomonas foetus",
+    "prompt": "Welches klinische Bild verursacht Tritrichomonas foetus bei der Katze?",
+    "options": [
+      "Chronische Diarrhö",
+      "Deckunlust",
+      "Hautekzem",
+      "Atemnot"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "katze"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Bei der Katze verursacht Tritrichomonas foetus eine Durchfallseuche mit chronischer Diarrhö und Colitis, v. a. bei Jungkatzen.",
+    "source": "Tritrichomonas foetus – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0465",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Trypanosoma equiperdum",
+    "prompt": "Trypanosoma equiperdum wird, anders als die meisten Trypanosomen, direkt durch den Deckakt übertragen.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "T. equiperdum ist die Ausnahme unter den Salivaria: Es wird nicht über einen Vektor, sondern direkt durch den Deckakt übertragen.",
+    "source": "Trypanosoma equiperdum – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0466",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Trypanosoma equiperdum",
+    "prompt": "Wie wird die durch Trypanosoma equiperdum verursachte Erkrankung des Pferdes genannt?",
+    "options": [
+      "Beschälseuche (Dourine)",
+      "Weiderot",
+      "Ostküstenfieber",
+      "Texasfieber"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "T. equiperdum verursacht die Beschälseuche/Dourine (Deckseuche des Pferdes).",
+    "source": "Trypanosoma equiperdum – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0467",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Trypanosoma equiperdum",
+    "prompt": "Wie werden die in Phase II der Beschälseuche auftretenden Hautveränderungen genannt?",
+    "options": [
+      "Talerflecken",
+      "Krötenflecken",
+      "Milkspots",
+      "Kokarden"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "In Phase II bilden sich juckreizfreie Quaddeln, sogenannte Talerflecken, v. a. in der Flankenregion.",
+    "source": "Trypanosoma equiperdum – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0468",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Trypanosoma equiperdum",
+    "prompt": "Der Erregernachweis von Trypanosoma equiperdum mittels Komplementbindungsreaktion (KBR) ist amtlich vorgeschrieben.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "diagnose"
+      ],
+      "flags": [
+        "anzeigepflichtig"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die KBR ist als amtlich vorgeschriebener Antikörpernachweis Teil der Diagnostik der anzeigepflichtigen Beschälseuche.",
+    "source": "Trypanosoma equiperdum – Diagnose"
+  },
+  {
+    "id": "q_0469",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Trypanosoma theileri",
+    "prompt": "Welches Insekt dient als Zwischenwirt/Vektor für Trypanosoma theileri?",
+    "options": [
+      "Bremsen",
+      "Sandmücken",
+      "Zecken",
+      "Flöhe"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Trypanosoma theileri wird zyklisch-exkretorisch über Bremsen (Tabanus, Haematopota spp.) übertragen.",
+    "source": "Trypanosoma theileri – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0470",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Trypanosoma theileri",
+    "prompt": "Trypanosoma theileri gilt beim Rind als weitgehend apathogen.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "leicht",
+    "explanation": "T. theileri ist beim Rind in der Regel apathogen und inapparent; nur bei massivem Befall werden Anämie oder Aborte diskutiert (nicht bewiesen).",
+    "source": "Trypanosoma theileri – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0471",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Leishmania infantum",
+    "prompt": "Welcher Vektor überträgt Leishmania infantum?",
+    "options": [
+      "Sandmücken (Phlebotomus-Arten)",
+      "Schildzecken",
+      "Bremsen",
+      "Flöhe"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund",
+        "mensch"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Leishmania infantum wird durch den Stich weiblicher Sand-/Schmetterlingsmücken (Phlebotomus-Arten) übertragen.",
+    "source": "Leishmania infantum – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0472",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Leishmania infantum",
+    "prompt": "In welcher Form liegt Leishmania infantum im Wirt vor?",
+    "options": [
+      "Amastigote Form",
+      "Promastigote Form",
+      "Trophozoit",
+      "Sporozoit"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Im Wirt liegt Leishmania infantum intrazellulär als amastigote Form vor; im Vektor extrazellulär als promastigote Form.",
+    "source": "Leishmania infantum – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0473",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Leishmania infantum",
+    "prompt": "Bei der viszeralen Leishmaniose des Hundes kann die Infektion bei bis zu 50 % der Tiere lange inapparent bleiben.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Die Inkubationszeit reicht von 1–3 Monaten bis zu Jahren; bei bis zu 50 % der Hunde bleibt die Infektion lange inapparent.",
+    "source": "Leishmania infantum – Klinik"
+  },
+  {
+    "id": "q_0474",
+    "needsReview": false,
+    "image": null,
+    "type": "multiple_choice",
+    "parasite": "Leishmania infantum",
+    "prompt": "Welche der folgenden Aussagen zur Immunreaktion des Hundes bei Leishmania infantum treffen zu?",
+    "options": [
+      "Asymptomatische Tiere zeigen eine Th1-dominierte Immunreaktion",
+      "Symptomatische Tiere zeigen eine Th2-dominierte Immunreaktion mit hohen Antikörperspiegeln ohne Schutzwirkung",
+      "Symptomatische Tiere zeigen grundsätzlich keine Antikörper",
+      "Die Th2-Antwort führt zu einer polyklonalen B-Zell-Aktivierung"
+    ],
+    "correctIndices": [
+      0,
+      1,
+      3
+    ],
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Asymptomatische Hunde zeigen eine Th1-Antwort mit erfolgreicher Erregerabtötung, symptomatische eine Th2-Antwort mit hohen, aber nicht schützenden Antikörperspiegeln und polyklonaler B-Zell-Aktivierung.",
+    "source": "Leishmania infantum – Immunologie"
+  },
+  {
+    "id": "q_0475",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Leishmania infantum",
+    "prompt": "Welche Impfung gegen Leishmania infantum ist in Europa zugelassen und verfügbar?",
+    "options": [
+      "Letifend",
+      "CaniLeish (verfügbar)",
+      "Ovilis Toxovac",
+      "Paracox-8"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "prophylaxe"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "CaniLeish ist zugelassen, aber laut Quelle nicht verfügbar; Letifend ist zugelassen und verfügbar (72 % Effizienz).",
+    "source": "Leishmania infantum – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0476",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Leishmania infantum",
+    "prompt": "Leishmania infantum ist eine Zoonose und Erreger der viszeralen Leishmaniose beim Menschen.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Leishmania infantum ist Erreger der viszeralen, kutanen und mukokutanen Leishmaniose des Menschen; autochthone Hunde gelten als Reservoirwirte.",
+    "source": "Leishmania infantum – Zoonose"
+  },
+  {
+    "id": "q_0477",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Leishmania infantum",
+    "prompt": "Welches Medikament gegen Leishmania infantum wird auch in der Humanmedizin als Chemotherapeutikum eingesetzt und hat starke Nebenwirkungen?",
+    "options": [
+      "Miltefosin",
+      "Fenbendazol",
+      "Ivermectin",
+      "Toltrazuril"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "flagellaten"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Miltefosin ist ein Chemotherapeutikum aus der Humanmedizin mit starken Nebenwirkungen, das gegen Leishmania infantum eingesetzt wird.",
+    "source": "Leishmania infantum – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0478",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Hepatozoon canis",
+    "prompt": "Wie infiziert sich der Hund typischerweise mit Hepatozoon canis?",
+    "options": [
+      "Durch Zerbeißen einer infizierten Zecke",
+      "Durch Zeckenstich",
+      "Über kontaminiertes Wasser",
+      "Diaplazentar"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Anders als bei den meisten Zeckenerregern erfolgt die Infektion phagär: Der Hund infiziert sich durch Zerbeißen (Fressen) der adulten, sporozoitenhaltigen Zecke.",
+    "source": "Hepatozoon canis – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0479",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Hepatozoon canis",
+    "prompt": "Welcher Zeckenart dient als Zwischenwirt für Hepatozoon canis?",
+    "options": [
+      "Rhipicephalus sanguineus",
+      "Ixodes ricinus",
+      "Dermacentor reticulatus",
+      "Argas reflexus"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "leicht",
+    "explanation": "Zwischenwirt von Hepatozoon canis ist die Zecke Rhipicephalus sanguineus.",
+    "source": "Hepatozoon canis – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0480",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria beim Huhn",
+    "prompt": "Wie viele Eimeria-Arten sind beim Huhn beschrieben?",
+    "options": [
+      "7",
+      "3",
+      "12",
+      "1"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Beim Huhn sind 7 Eimeria-Arten beschrieben: E. tenella, E. necatrix, E. acervulina, E. maxima, E. brunetti, E. mitis, E. praecox.",
+    "source": "Eimeria beim Huhn – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0481",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria beim Huhn",
+    "prompt": "Wie viele Sporozoiten enthält eine sporulierte Eimeria-Oocyste beim Huhn?",
+    "options": [
+      "4 Sporocysten mit je 2 Sporozoiten",
+      "2 Sporocysten mit je 4 Sporozoiten",
+      "1 Sporocyste mit 8 Sporozoiten",
+      "8 Sporocysten mit je 1 Sporozoit"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Die Oocyste enthält 4 Sporocysten mit je 2 Sporozoiten (insgesamt 8 Sporozoiten).",
+    "source": "Eimeria beim Huhn – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0482",
+    "needsReview": false,
+    "image": null,
+    "type": "matching",
+    "parasite": "Eimeria beim Huhn",
+    "prompt": "Ordnen Sie die Eimeria-Art ihrem Hauptsitz im Darm des Huhns zu.",
+    "left": [
+      "E. tenella",
+      "E. necatrix",
+      "E. acervulina",
+      "E. maxima"
+    ],
+    "right": [
+      "Caeca",
+      "Jejunum, Caeca (nur Gamonten)",
+      "Duodenum, proximales Jejunum",
+      "Jejunum"
+    ],
+    "correctPairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "E. tenella sitzt in den Caeca, E. necatrix in Jejunum und Caeca (nur Gamonten), E. acervulina im Duodenum/proximalen Jejunum und E. maxima im Jejunum.",
+    "source": "Eimeria beim Huhn – Entwicklung"
+  },
+  {
+    "id": "q_0483",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria beim Huhn",
+    "prompt": "Welche Eimeria-Art beim Huhn verursacht die „Rote Kükenruhr“?",
+    "options": [
+      "E. tenella",
+      "E. acervulina",
+      "E. maxima",
+      "E. mitis"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "E. tenella verursacht eine hämorrhagische Typhlitis mit blutigem Durchfall, bekannt als „Rote Kükenruhr“.",
+    "source": "Eimeria beim Huhn – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0484",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Eimeria beim Huhn",
+    "prompt": "Eine Eimeria-Infektion im Hühnerbestand lässt sich durch Hygienemaßnahmen vollständig verhindern.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Es ist unmöglich, eine Eimeria-Infektion im Bestand vollständig zu verhindern, da sporulierte Oocysten sehr langlebig und resistent gegenüber chemischen Desinfektionsmitteln sind.",
+    "source": "Eimeria beim Huhn – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0485",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria beim Huhn",
+    "prompt": "Welcher Wirkstoff wird zur Vakzination gegen Eimeria-Arten beim Huhn eingesetzt (Paracox-8)?",
+    "options": [
+      "Frühreife, sporulierte Oocysten aller 7 Eimeria-Arten",
+      "Abgetötete Merozoiten",
+      "Rekombinantes Oberflächenprotein",
+      "Inaktivierte Vollerreger-Vakzine"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "prophylaxe"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Paracox-8 enthält frühreife sporulierte Oocysten von Linien aller 7 Eimeria-Arten mit verkürzter Präpatenz und geringerer Virulenz.",
+    "source": "Eimeria beim Huhn – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0486",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria beim Huhn",
+    "prompt": "Welches Anticoccidium hemmt die Folsäure-Synthese?",
+    "options": [
+      "Sulfonamide",
+      "Toltrazuril",
+      "Amprolium",
+      "Ivermectin"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Sulfonamide hemmen die Folsäure-Synthese (und damit die DNA-Synthese) der Kokzidien.",
+    "source": "Eimeria beim Huhn – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0487",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria bei Gans, Ente, Pute",
+    "prompt": "Welche Eimeria-Art der Pute gilt als sehr hoch pathogen?",
+    "options": [
+      "E. meleagrimitis",
+      "E. meleagridis",
+      "E. dispersa",
+      "E. anseris"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "E. meleagrimitis (Sitz Dünndarm) gilt als sehr hoch pathogen, während E. meleagridis nicht pathogen ist.",
+    "source": "Eimeria bei Truthahn (Pute)"
+  },
+  {
+    "id": "q_0488",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria bei Gans, Ente, Pute",
+    "prompt": "Welche Eimeria-Art der Gans befällt das Epithel der Nierentubuli und ist hochpathogen für Gänseküken?",
+    "options": [
+      "E. truncata",
+      "E. anseris",
+      "Tyzzeria parvula",
+      "E. danailovi"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "schwer",
+    "explanation": "E. truncata befällt das Epithel der Nierentubuli und ist hochpathogen für Gänseküken; ganze Herden können innerhalb weniger Tage absterben.",
+    "source": "Eimeria bei Gans"
+  },
+  {
+    "id": "q_0489",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria beim Rind",
+    "prompt": "Welche zwei Eimeria-Arten werden für das Rind namentlich genannt?",
+    "options": [
+      "Eimeria bovis und E. zuernii",
+      "Eimeria tenella und E. necatrix",
+      "Eimeria stiedai und E. intestinalis",
+      "Eimeria bovis und E. maxima"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Beim Rind werden Eimeria bovis und E. zuernii genannt; insgesamt sind 13 Arten in Mitteleuropa beschrieben.",
+    "source": "Eimeria beim Rind – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0490",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Eimeria beim Kaninchen",
+    "prompt": "Welche Eimeria-Art des Kaninchens ist namentlich in der Quelle genannt?",
+    "options": [
+      "Eimeria stiedai",
+      "Eimeria bovis",
+      "Eimeria tenella",
+      "Eimeria zuernii"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "kaninchen"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "leicht",
+    "explanation": "Beim Kaninchen werden Eimeria stiedai und E. intestinalis genannt.",
+    "source": "Eimeria beim Kaninchen – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0491",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Isospora suis",
+    "prompt": "In welchem Alter sind Ferkel am häufigsten von einer klinischen Isosporose betroffen?",
+    "options": [
+      "5–15 Tage",
+      "4–8 Wochen",
+      "Direkt nach dem Absetzen",
+      "Erst als Mastschwein"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "schwein"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Vor allem 5–15 Tage alte Ferkel zeigen dünnbreiig-flüssigen, stinkenden, gelblichen Kot für etwa eine Woche.",
+    "source": "Isospora suis – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0492",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Isospora suis",
+    "prompt": "Welche Flotationsmethode wird bei Isospora suis wegen des Fettgehalts des Kots eingesetzt?",
+    "options": [
+      "Salz-Zucker-Flotation",
+      "Einfache NaCl-Flotation",
+      "Sedimentation",
+      "MIFC-Methode"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "schwein"
+      ],
+      "topic": [
+        "diagnose"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Wegen des Fettgehalts des Ferkelkots wird eine Salz-Zucker-Flotation eingesetzt.",
+    "source": "Isospora suis – Diagnose"
+  },
+  {
+    "id": "q_0493",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Isospora suis",
+    "prompt": "Welches Anticoccidium wird zur metaphylaktischen Behandlung von 3–6 Tage alten Ferkeln eingesetzt?",
+    "options": [
+      "Toltrazuril",
+      "Ivermectin",
+      "Praziquantel",
+      "Fenbendazol"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "schwein"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Toltrazuril wird p.o. eingesetzt und ist hochwirksam, besonders bei früher, einmaliger metaphylaktischer Gabe bei 3–6 Tage alten Ferkeln.",
+    "source": "Isospora suis – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0494",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Isospora suis",
+    "prompt": "Ältere Tiere scheiden bei Infektion mit Isospora suis meist eher Eimeria-Oocysten aus als Isospora-Oocysten.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "schwein"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Die Ausscheidung von Isospora-Oocysten ist altersabhängig und fällt nach 2–3 Wochen ab; ältere Tiere scheiden eher Eimeria-Oocysten aus.",
+    "source": "Isospora suis – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0495",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Isospora canis/Isospora felis",
+    "prompt": "Isospora canis kann von Hunden auf Katzen übertragen werden.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Es besteht eine hohe Wirtsspezifität: Dormozoiten sind nur für den jeweiligen Endwirt (Caniden bzw. Feliden) infektiös, eine Übertragung zwischen Hund und Katze findet nicht statt.",
+    "source": "Isospora canis/Isospora felis – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0496",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Isospora canis/Isospora felis",
+    "prompt": "Welche Infektionsquelle ist bei Isospora canis/felis potenziell relevant, wenn Hunde/Katzen roh gefüttert werden?",
+    "options": [
+      "Rohes Frischfleisch (BARFEN)",
+      "Kontaminiertes Trinkwasser",
+      "Zeckenstich",
+      "Flohbiss"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die Verfütterung von rohem Frischfleisch (BARFEN) ist eine potenzielle Infektionsquelle, da paratenische Wirte Dormozoiten enthalten können.",
+    "source": "Isospora canis/Isospora felis – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0497",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Neospora caninum",
+    "prompt": "Wer ist Endwirt von Neospora caninum?",
+    "options": [
+      "Hund, Wolf",
+      "Katze",
+      "Rind",
+      "Schwein"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Endwirt von Neospora caninum sind Hund und Wolf; Zwischenwirt ist v. a. das Rind (auch kleine Wiederkäuer, Hasen, Karnivoren).",
+    "source": "Neospora caninum – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0498",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Neospora caninum",
+    "prompt": "Welche epidemiologische Bedeutung hat Neospora caninum für das Rind in Europa?",
+    "options": [
+      "Wichtigster Aborterreger des Rindes",
+      "Bedeutungslos",
+      "Nur bei Jungrindern relevant",
+      "Nur bei Bullen relevant"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Neospora caninum gilt in Europa als wichtigster Aborterreger des Rindes.",
+    "source": "Neospora caninum – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0499",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Neospora caninum",
+    "prompt": "Bei Neospora caninum ist die vertikale (intrauterine) Übertragung im Rinderbestand epidemiologisch extrem bedeutsam.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Die vertikale Übertragung ermöglicht die Persistenz der Parasitose über mehrere Zuchtgenerationen und ist von extrem wichtiger epidemiologischer Bedeutung.",
+    "source": "Neospora caninum – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0500",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Neospora caninum",
+    "prompt": "Womit wird die caninumbedingte Neosporose beim Hund typischerweise in Verbindung gebracht?",
+    "options": [
+      "Polyradikuloneuritis-Myositis mit Muskelatrophie und Paralyse bei Welpen",
+      "Chronische Diarrhö bei adulten Hunden",
+      "Otitis externa",
+      "Lebertumoren"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Intrauterin infizierte Welpen entwickeln eine Polyradikuloneuritis-Myositis mit Muskelatrophie, spastischer Hyperextension und Paralyse.",
+    "source": "Neospora caninum – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0501",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Neospora caninum",
+    "prompt": "Wodurch unterscheiden sich die Gewebecysten von Neospora caninum histologisch von denen von Toxoplasma gondii?",
+    "options": [
+      "Dickere Zystenwand",
+      "Größere Bradyzoiten",
+      "Fehlende Wand",
+      "Andere Farbe im HE-Schnitt"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "diagnose"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Als wichtige Differentialdiagnose gelten die Cysten von Toxoplasma gondii, die eine dünnere Wand aufweisen als Neospora-Gewebecysten.",
+    "source": "Neospora caninum – Diagnose"
+  },
+  {
+    "id": "q_0502",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Neospora caninum",
+    "prompt": "Welche Präventionsmaßnahme wird gegen Neosporose-Aborte beim Rind empfohlen?",
+    "options": [
+      "Sicherung von Nachgeburten vor dem Zugriff durch Hunde/Füchse",
+      "Impfung mit Ovilis Toxovac",
+      "Zeckenprophylaxe",
+      "Wöchentliche Entwurmung"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "prophylaxe"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Da Hunde durch Aufnahme von Nachgeburten/Kadavern infiziert werden können, sollen diese vor dem Zugriff von Hunden/Füchsen gesichert werden.",
+    "source": "Neospora caninum – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0503",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Besnoitia besnoiti",
+    "prompt": "Wer ist Zwischenwirt von Besnoitia besnoiti?",
+    "options": [
+      "Rind",
+      "Schaf",
+      "Pferd",
+      "Hund"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Zwischenwirt von Besnoitia besnoiti ist das Rind; der Endwirt ist bisher nicht bekannt.",
+    "source": "Besnoitia besnoiti – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0504",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Besnoitia besnoiti",
+    "prompt": "Wie wird die akute Phase der Besnoitiose des Rindes genannt?",
+    "options": [
+      "Anasarka-Stadium",
+      "Sklerodermie-Phase",
+      "Ostküstenfieber",
+      "Weiderot"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die akute Phase (1–3 Wochen p.i.) wird als „Anasarka-Stadium“ bezeichnet und ist durch Fieber, Ödeme und Lymphknotenschwellung gekennzeichnet.",
+    "source": "Besnoitia besnoiti – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0505",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Besnoitia besnoiti",
+    "prompt": "Für Besnoitia besnoiti existiert eine wirksame, in Deutschland zugelassene Therapie.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Es gibt keine wirksame Therapie; attenuierte Lebendimpfstoffe sind zudem in Deutschland nicht zugelassen.",
+    "source": "Besnoitia besnoiti – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0506",
+    "needsReview": false,
+    "image": null,
+    "type": "matching",
+    "parasite": "Sarcocystis bei Wdk., Schw.",
+    "prompt": "Ordnen Sie die Sarcocystis-Art ihrem Zwischenwirt zu (Endwirt jeweils Hund, außer S. hominis).",
+    "left": [
+      "S. tenella",
+      "S. capracanis",
+      "S. miescheriana",
+      "S. cruzi"
+    ],
+    "right": [
+      "Schaf",
+      "Ziege",
+      "Schwein",
+      "Rind"
+    ],
+    "correctPairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "schwein"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "S. tenella (Schaf), S. capracanis (Ziege), S. miescheriana (Schwein) und S. cruzi (Rind) haben jeweils den Hund als Endwirt.",
+    "source": "Sarcocystis bei Wdk., Schw. – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0507",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Sarcocystis bei Wdk., Schw.",
+    "prompt": "Welche Sarcocystis-Arten sind Zoonoseerreger beim Menschen?",
+    "options": [
+      "S. suihominis und S. hominis",
+      "S. tenella und S. cruzi",
+      "S. capracanis und S. miescheriana",
+      "Keine"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "schwein",
+        "wiederkaeuer",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Zoonoseerreger sind S. suihominis (Zwischenwirt Schwein) und S. hominis (Zwischenwirt Rind), die durch rohes Fleisch aufgenommen werden.",
+    "source": "Sarcocystis bei Wdk., Schw. – Zoonose"
+  },
+  {
+    "id": "q_0508",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Sarcocystis bei Wdk., Schw.",
+    "prompt": "Der Endwirt bei Sarcocystis durchläuft im Darm auch eine Merogonie, bevor die Gamogonie beginnt.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "schwein"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "Im Endwirt findet keine Merogonie statt — nur die geschlechtliche Vermehrung (Gamogonie und Sporogonie); die Merogonie läuft ausschließlich im Zwischenwirt ab.",
+    "source": "Sarcocystis bei Wdk., Schw. – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0509",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Sarcocystis bei Pferden",
+    "prompt": "Welche Erkrankung verursacht Sarcocystis neurona beim Pferd?",
+    "options": [
+      "Equine Protozoal Myeloencephalitis (EPM)",
+      "Beschälseuche",
+      "Weiderot",
+      "Texasfieber"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Sarcocystis neurona verursacht beim Pferd (Fehlwirt) die Equine Protozoal Myeloencephalitis (EPM) mit nicht-eitriger Myeloencephalitis.",
+    "source": "Sarcocystis bei Pferden – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0510",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Sarcocystis bei Pferden",
+    "prompt": "Wer ist der natürliche Endwirt von Sarcocystis neurona?",
+    "options": [
+      "Opossum-Arten",
+      "Hund",
+      "Katze",
+      "Fuchs"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Endwirt von S. neurona sind Opossum-Arten; das Pferd ist Fehlwirt (in Europa nur bei Importpferden aus Amerika relevant, da Opossums hier nicht heimisch sind).",
+    "source": "Sarcocystis bei Pferden – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0511",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Toxoplasma gondii",
+    "prompt": "Wer ist der einzige Endwirt von Toxoplasma gondii, der Oocysten ausscheidet?",
+    "options": [
+      "Hauskatze/Feliden",
+      "Hund",
+      "Schwein",
+      "Mensch"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "katze"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Ausschließlich Hauskatzen und andere Feliden sind Endwirte, die als einzige Oocysten ausscheiden.",
+    "source": "Toxoplasma gondii – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0512",
+    "needsReview": false,
+    "image": null,
+    "type": "multiple_choice",
+    "parasite": "Toxoplasma gondii",
+    "prompt": "Über welche Wege kann sich ein Zwischenwirt mit Toxoplasma gondii infizieren?",
+    "options": [
+      "Orale Aufnahme sporulierter Oocysten aus Katzenkot",
+      "Verzehr von rohem Fleisch mit Gewebecysten",
+      "Pränatale Übertragung",
+      "Ausschließlich über Zeckenstiche"
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2
+    ],
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "schwein"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Übertragungswege sind orale Aufnahme sporulierter Oocysten aus Katzenkot, Verzehr von Gewebecysten in rohem Fleisch sowie pränatal (und teils galaktogen); eine Übertragung über Zecken ist nicht beschrieben.",
+    "source": "Toxoplasma gondii – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0513",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Toxoplasma gondii",
+    "prompt": "Welches Stadium von Toxoplasma gondii ist sehr pathogen und außerhalb der Wirtszelle nur kurz lebensfähig?",
+    "options": [
+      "Tachyzoiten",
+      "Bradyzoiten",
+      "Sporozoiten in der unsporulierten Oocyste",
+      "Gamonten"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "katze"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Tachyzoiten sind sehr pathogen, vermehren sich rasch durch Endodyogenie und sind außerhalb von Wirtszellen nur kurzfristig lebensfähig.",
+    "source": "Toxoplasma gondii – Entwicklung im End- und Zwischenwirt"
+  },
+  {
+    "id": "q_0514",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Toxoplasma gondii",
+    "prompt": "Rinder gelten als weitgehend unempfänglich für Toxoplasma gondii und eliminieren den Parasiten meist vollständig.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Rinder sind als einzig bekannte Wirtstierart relativ unempfänglich und eliminieren den Parasiten meist nach wenigen Wochen vollständig.",
+    "source": "Toxoplasma gondii – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0515",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Toxoplasma gondii",
+    "prompt": "Welche Untersuchung wird empfohlen, um das Infektionsrisiko einer Katze für eine schwangere Halterin einzuschätzen?",
+    "options": [
+      "1 serologische und 4 koproskopische Untersuchungen im Wochenabstand",
+      "Einmalige serologische Untersuchung",
+      "Röntgenuntersuchung des Abdomens",
+      "PCR aus Blut, einmalig"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "katze",
+        "mensch"
+      ],
+      "topic": [
+        "diagnose"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Empfohlen werden eine serologische sowie 4 koproskopische Untersuchungen im Wochenabstand; bei positivem serologischem und negativem koproskopischem Befund ist eine Infektionsquelle unwahrscheinlich (Restrisiko „reshedding“).",
+    "source": "Toxoplasma gondii – Diagnose"
+  },
+  {
+    "id": "q_0516",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Toxoplasma gondii",
+    "prompt": "Eine Katze mit Toxoplasma-Verdacht sollte aus Angst vor einer Infektionsgefahr für Schwangere eingeschläfert werden.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "katze",
+        "mensch"
+      ],
+      "topic": [
+        "prophylaxe"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Die Quelle betont ausdrücklich: keine Euthanasie aus Furcht vor Infektion — stattdessen Risikoabschätzung und Hygienemaßnahmen.",
+    "source": "Toxoplasma gondii – Diagnose"
+  },
+  {
+    "id": "q_0517",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Toxoplasma gondii",
+    "prompt": "Welcher Anteil der Weltbevölkerung ist schätzungsweise mit Toxoplasma gondii infiziert?",
+    "options": [
+      "Ca. ⅓",
+      "Ca. 5 %",
+      "Ca. 90 %",
+      "Praktisch niemand"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Toxoplasma gondii ist der weltweit häufigste Zoonoseerreger; etwa ⅓ der Menschheit gilt als infiziert.",
+    "source": "Toxoplasma gondii – Zoonose"
+  },
+  {
+    "id": "q_0518",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Cryptosporidium spp.",
+    "prompt": "Welche Cryptosporidium-Art ist bis zum Absetzalter für die meisten Kälberinfektionen verantwortlich und zugleich Zoonoseerreger?",
+    "options": [
+      "C. parvum",
+      "C. bovis",
+      "C. andersoni",
+      "C. baileyi"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose",
+        "meldepflichtig"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Bis zum Absetzalter sind ca. 85 % der Infektionen auf C. parvum zurückzuführen, einen wichtigen Zoonoseerreger.",
+    "source": "Cryptosporidium spp. – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0519",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Cryptosporidium spp.",
+    "prompt": "Cryptosporidium-Oocysten sind gegen die übliche Chlorierung von Trinkwasser resistent.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Oocysten sind resistent gegen Chlorierung des Trinkwassers; Inaktivierung ist nur durch UV-Bestrahlung oder Filtration möglich.",
+    "source": "Cryptosporidium spp. – Zoonose"
+  },
+  {
+    "id": "q_0520",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Cryptosporidium spp.",
+    "prompt": "Welches Leitsymptom ist charakteristisch für die Cryptosporidiose beim Kalb?",
+    "options": [
+      "Profuse Diarrhoe mit flüssigem, hellgelbem Kot",
+      "Blutiger Husten",
+      "Lahmheit",
+      "Ikterus ohne Durchfall"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Leitsymptom ist eine profuse Diarrhoe mit flüssigem, hellgelbem Kot, begleitet von Inappetenz, Exsikkose und Fieber.",
+    "source": "Cryptosporidium spp. – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0521",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Cryptosporidium spp.",
+    "prompt": "Welches Medikament wird zur metaphylaktischen Behandlung von Kälbern gegen Cryptosporidium eingesetzt, hat aber eine sehr geringe therapeutische Breite?",
+    "options": [
+      "Halofuginon",
+      "Toltrazuril",
+      "Ivermectin",
+      "Praziquantel"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Halofuginon wird metaphylaktisch p.o. in Problembeständen eingesetzt, hat aber eine sehr geringe therapeutische Breite — schon leichte Überdosierung kann tödlich sein; bei laktierenden Tieren ist es verboten.",
+    "source": "Cryptosporidium spp. – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0522",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Cryptosporidium spp.",
+    "prompt": "Welche Cryptosporidium-Art befällt beim Geflügel den Respirationstrakt?",
+    "options": [
+      "C. baileyi",
+      "C. meleagridis",
+      "C. parvum",
+      "C. andersoni"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "kokzidien"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "C. baileyi befällt Epithelzellen der Atemwege und Bursa und kann respiratorische Symptome verursachen.",
+    "source": "Cryptosporidium spp. – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0523",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia spp. (allgemein)",
+    "prompt": "Wer ist der Endwirt der Babesien?",
+    "options": [
+      "Schildzecken",
+      "Säugetiere",
+      "Vögel",
+      "Schnecken"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "hund",
+        "pferd"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Babesien sind obligat diheteroxen: Endwirt sind Schildzecken, Zwischenwirt Säugetiere.",
+    "source": "Ordnung Piroplasmida → Gattung Babesia – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0524",
+    "needsReview": false,
+    "image": null,
+    "type": "multiple_choice",
+    "parasite": "Babesia spp. (allgemein)",
+    "prompt": "Welche Übertragungswege spielen bei Babesien vertikal in der Zecke eine Rolle?",
+    "options": [
+      "Transovarielle Übertragung (Befall der Ovar-Oocysten)",
+      "Transstadiale Übertragung (Larve → Nymphe → Adult)",
+      "Übertragung ausschließlich durch Nymphen",
+      "Keine vertikale Übertragung möglich"
+    ],
+    "correctIndices": [
+      0,
+      1
+    ],
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "hund",
+        "pferd"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "Bei Babesien existieren sowohl transovarielle (Sporokineten befallen Ovar-Oocysten) als auch transstadiale Übertragung über mehrere Zeckengenerationen.",
+    "source": "Ordnung Piroplasmida → Gattung Babesia – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0525",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia spp. (allgemein)",
+    "prompt": "Welches Therapeutikum wird bei akuter Babesiose eingesetzt, mit Atropin als Antidot bei Nebenwirkungen?",
+    "options": [
+      "Imidocarb",
+      "Toltrazuril",
+      "Fenbendazol",
+      "Praziquantel"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "hund",
+        "pferd"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Imidocarb ist Mittel der Wahl; bei Nebenwirkungen wie Speicheln, Tränenfluss oder Kolik dient Atropin als Antidot.",
+    "source": "Ordnung Piroplasmida → Gattung Babesia – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0526",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia divergens",
+    "prompt": "Welcher Zeckenart überträgt Babesia divergens beim Rind?",
+    "options": [
+      "Ixodes ricinus",
+      "Rhipicephalus sanguineus",
+      "Dermacentor reticulatus",
+      "Argas reflexus"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Babesia divergens wird durch Ixodes ricinus übertragen.",
+    "source": "Babesia divergens – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0527",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia divergens",
+    "prompt": "Wie wird die durch Babesia divergens verursachte Rinderkrankheit umgangssprachlich genannt?",
+    "options": [
+      "Weiderot (Blutharnen)",
+      "Rote Kükenruhr",
+      "Ostküstenfieber",
+      "Beschälseuche"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Babesia divergens verursacht das sogenannte Weiderot (Blutharnen) mit hämolytischer Anämie und Hämoglobinurie.",
+    "source": "Babesia divergens – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0528",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Babesia divergens",
+    "prompt": "Babesia divergens ist eine Zoonose, die vor allem splenektomierte Menschen betrifft.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "B. divergens (und B. venatorum) können selten Menschen infizieren, v. a. Immunkomprimierte ohne Milz, mit malariaähnlicher Symptomatik.",
+    "source": "Babesia divergens – Zoonose"
+  },
+  {
+    "id": "q_0529",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia canis",
+    "prompt": "Welche Zecke überträgt Babesia canis?",
+    "options": [
+      "Dermacentor reticulatus",
+      "Ixodes ricinus",
+      "Rhipicephalus sanguineus",
+      "Haemaphysalis punctata"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Endwirt von Babesia canis ist die adulte Dermacentor reticulatus.",
+    "source": "Babesia canis – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0530",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia canis",
+    "prompt": "Welche schwere Komplikation kann bei der akuten „schweren Form“ der Babesiose durch B. canis auftreten?",
+    "options": [
+      "Hypotensiver Schock mit akutem Lungenversagen",
+      "Chronische Obstipation",
+      "Diabetes insipidus",
+      "Osteoporose"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Bei der akuten „schweren Form“ (naive Hunde) kann es zu hypotensivem Schock mit akutem Lungenversagen kommen; die Tiere können innerhalb von 24h verenden.",
+    "source": "Babesia canis – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0531",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Babesia canis",
+    "prompt": "Bei Babesia canis besteht eine Jugendresistenz wie bei vielen anderen Babesia-Arten.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Anders als z. B. bei B. divergens oder B. caballi besteht bei B. canis keine Jugendresistenz.",
+    "source": "Babesia canis – Immunologie"
+  },
+  {
+    "id": "q_0532",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia caballi",
+    "prompt": "Welche Tierart(en) betrifft Babesia caballi?",
+    "options": [
+      "Equiden",
+      "Rind",
+      "Hund",
+      "Schaf"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Babesia caballi befällt Equiden und wird durch Dermacentor übertragen.",
+    "source": "Babesia caballi – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0533",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Babesia caballi",
+    "prompt": "Endemische Pferde erkranken bei Babesia caballi selten, während Importpferde als Überträger wichtig sind.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Durch endemische Stabilität erkranken einheimische Pferde selten, während Importpferde als Überträger fungieren.",
+    "source": "Babesia caballi – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0534",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia bigemina",
+    "prompt": "Wie wird die durch Babesia bigemina verursachte Erkrankung genannt?",
+    "options": [
+      "Texasfieber",
+      "Weiderot",
+      "Ostküstenfieber",
+      "Mittelmeer-Theileriose"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Babesia bigemina gilt als Erreger des Texasfiebers.",
+    "source": "Babesia bigemina – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0535",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia bovis",
+    "prompt": "Welcher Pathogenitätsmechanismus ist für Babesia bovis charakteristisch und verursacht neurologische Störungen?",
+    "options": [
+      "Cytoadhärenz infizierter Erythrozyten im Kapillarnetz",
+      "Direkte Zerstörung des Rückenmarks",
+      "Autoimmunreaktion gegen Myelin",
+      "Bakterielle Sekundärinfektion des ZNS"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "schwer",
+    "explanation": "Bei B. bovis akkumulieren infizierte Erythrozyten im Kapillarnetz verschiedener Organe (Cytoadhärenz), was die Blutzirkulation behindert und neurologische Störungen bis Multiorganversagen verursacht.",
+    "source": "Babesia bovis – Pathogenese/Pathologie/Immunologie"
+  },
+  {
+    "id": "q_0536",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Theileria spp. (allgemein)",
+    "prompt": "Wie wird die charakteristische Anordnung von 4 Merozoiten bei Theileria-Arten genannt?",
+    "options": [
+      "Malteserkreuz",
+      "Rosettenform",
+      "Sternform",
+      "Kleeblatt"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Vier kreuzförmig angeordnete Merozoiten in den Erythrozyten werden als „Malteserkreuz“ bezeichnet.",
+    "source": "Theileria ssp. – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0537",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Theileria spp. (allgemein)",
+    "prompt": "Im Gegensatz zu Babesien fungieren Zecken bei Theileria-Arten nicht als Reservoirwirte.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Bei Theileria erfolgt nur transstadiale, keine transovarielle Übertragung — Reservoirwirte sind andere Säugetiere, nicht die Zecken selbst.",
+    "source": "Theileria ssp. – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0538",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Theileria parva",
+    "prompt": "Wie wird die durch Theileria parva verursachte Erkrankung des Rindes genannt?",
+    "options": [
+      "Ostküstenfieber",
+      "Texasfieber",
+      "Weiderot",
+      "Mittelmeer-Theileriose"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "leicht",
+    "explanation": "T. parva verursacht das Ostküstenfieber (east coast fever) mit Mortalitätsraten bis 100 % bei Rindern.",
+    "source": "Theileria parva – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0539",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Theileria parva",
+    "prompt": "Nach überstandener Infektion mit Theileria parva entwickeln Rinder eine sterile Immunität ohne verbleibende Erreger.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "schwer",
+    "explanation": "T. parva führt zu steriler Immunität — überlebende Tiere sind keine Reservoire mehr, anders als bei T. annulata oder T. equi (Präimmunität).",
+    "source": "Theileria parva – Immunologie"
+  },
+  {
+    "id": "q_0540",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Theileria annulata",
+    "prompt": "Wie wird die durch Theileria annulata verursachte Erkrankung genannt?",
+    "options": [
+      "Mittelmeer-Theileriose",
+      "Ostküstenfieber",
+      "Weiderot",
+      "Beschälseuche"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "leicht",
+    "explanation": "T. annulata verursacht die Mittelmeer-Theileriose, mit Mortalitätsraten bis 60 %.",
+    "source": "Theileria annulata – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0541",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Theileria equi",
+    "prompt": "Wer ist Zwischenwirt von Theileria equi?",
+    "options": [
+      "Pferd",
+      "Rind",
+      "Hund",
+      "Wasserbüffel"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Zwischenwirt von Theileria equi ist das Pferd; früher wurde die Art zur Gattung Babesia gerechnet.",
+    "source": "Theileria equi – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0542",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Theileria equi",
+    "prompt": "Bei Theileria equi wurde eine intrauterine, vertikale Übertragung nachgewiesen.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Für T. equi wurde eine intrauterine Infektion und vertikale Übertragung nachgewiesen.",
+    "source": "Theileria equi – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0543",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia gibsoni",
+    "prompt": "In welchen Regionen kommt Babesia gibsoni vor?",
+    "options": [
+      "Asien, Australien, Nordafrika",
+      "Nur Mitteleuropa",
+      "Nur Südamerika",
+      "Weltweit gleichmäßig"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Babesia gibsoni kommt in Asien, Australien und Nordafrika vor und wird nur durch adulte Zeckenstadien übertragen.",
+    "source": "Babesia gibsoni – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0544",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Babesia vogeli",
+    "prompt": "Welcher Zeckenart überträgt Babesia vogeli in allen drei Stadien (Larve, Nymphe, Adult)?",
+    "options": [
+      "Rhipicephalus",
+      "Ixodes",
+      "Dermacentor",
+      "Haemaphysalis"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Rhipicephalus überträgt Babesia vogeli in allen drei Zeckenstadien, im Gegensatz zu vielen anderen Babesia-Arten.",
+    "source": "Babesia vogeli – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0545",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Babesia vogeli",
+    "prompt": "Babesia vogeli verursacht typischerweise eine „milde Form“ der Babesiose beim Hund.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "protozoen"
+      ],
+      "subclass": [
+        "piroplasmen"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "B. vogeli verläuft meist fast inapparent mit geringgradiger Parasitämie, mildem Fieber und leichter Anämie („milde Form“, keine Jugendresistenz).",
+    "source": "Babesia vogeli – Pathogenese/Pathologie/Immunologie/Klinik"
   }
 ]

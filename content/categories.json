@@ -6,12 +6,14 @@
       "values": [
         { "id": "trematoden", "label": "Trematoden" },
         { "id": "zestoden", "label": "Zestoden" },
-        { "id": "nematoden", "label": "Nematoden" }
+        { "id": "nematoden", "label": "Nematoden" },
+        { "id": "protozoen", "label": "Protozoen" },
+        { "id": "ektoparasiten", "label": "Ektoparasiten" }
       ]
     },
     {
       "id": "subclass",
-      "label": "Nematoden-Untergruppe",
+      "label": "Untergruppe",
       "values": [
         { "id": "magendarm_strongyliden", "label": "Magen-Darm-Strongyliden" },
         { "id": "strongyliden_pferd", "label": "Große/kleine Strongyliden (Pferd)" },
@@ -19,7 +21,16 @@
         { "id": "lungenwuermer", "label": "Lungenwürmer" },
         { "id": "askariden", "label": "Askariden" },
         { "id": "filarien", "label": "Filarien" },
-        { "id": "sonstige_nematoden", "label": "Sonstige Nematoden" }
+        { "id": "sonstige_nematoden", "label": "Sonstige Nematoden" },
+        { "id": "flagellaten", "label": "Flagellaten" },
+        { "id": "kokzidien", "label": "Kokzidien" },
+        { "id": "piroplasmen", "label": "Piroplasmen" },
+        { "id": "zecken", "label": "Zecken" },
+        { "id": "milben", "label": "Milben" },
+        { "id": "laeuse", "label": "Läuse" },
+        { "id": "floehe", "label": "Flöhe" },
+        { "id": "fliegen_muecken", "label": "Fliegen/Mücken" },
+        { "id": "sonstige_ektoparasiten", "label": "Sonstige Ektoparasiten" }
       ]
     },
     {
@@ -33,6 +44,8 @@
         { "id": "katze", "label": "Katze" },
         { "id": "gefluegel", "label": "Geflügel" },
         { "id": "fisch", "label": "Fisch" },
+        { "id": "kaninchen", "label": "Kaninchen" },
+        { "id": "biene", "label": "Biene" },
         { "id": "mensch", "label": "Mensch (zoonotisch)" }
       ]
     },
@@ -56,7 +69,8 @@
       "label": "Merkmale",
       "values": [
         { "id": "zoonose", "label": "Zoonose" },
-        { "id": "meldepflichtig", "label": "Meldepflichtig" }
+        { "id": "meldepflichtig", "label": "Meldepflichtig" },
+        { "id": "anzeigepflichtig", "label": "Anzeigepflichtig (Tierseuche)" }
       ]
     }
   ]
