@@ -1,0 +1,63 @@
+{
+  "dimensions": [
+    {
+      "id": "class",
+      "label": "Parasitengruppe",
+      "values": [
+        { "id": "trematoden", "label": "Trematoden" },
+        { "id": "zestoden", "label": "Zestoden" },
+        { "id": "nematoden", "label": "Nematoden" }
+      ]
+    },
+    {
+      "id": "subclass",
+      "label": "Nematoden-Untergruppe",
+      "values": [
+        { "id": "magendarm_strongyliden", "label": "Magen-Darm-Strongyliden" },
+        { "id": "strongyliden_pferd", "label": "Große/kleine Strongyliden (Pferd)" },
+        { "id": "hakenwuermer", "label": "Hakenwürmer" },
+        { "id": "lungenwuermer", "label": "Lungenwürmer" },
+        { "id": "askariden", "label": "Askariden" },
+        { "id": "filarien", "label": "Filarien" },
+        { "id": "sonstige_nematoden", "label": "Sonstige Nematoden" }
+      ]
+    },
+    {
+      "id": "host",
+      "label": "Wirtstier",
+      "values": [
+        { "id": "wiederkaeuer", "label": "Wiederkäuer" },
+        { "id": "pferd", "label": "Pferd" },
+        { "id": "schwein", "label": "Schwein" },
+        { "id": "hund", "label": "Hund" },
+        { "id": "katze", "label": "Katze" },
+        { "id": "gefluegel", "label": "Geflügel" },
+        { "id": "fisch", "label": "Fisch" },
+        { "id": "mensch", "label": "Mensch (zoonotisch)" }
+      ]
+    },
+    {
+      "id": "topic",
+      "label": "Thema",
+      "values": [
+        { "id": "morphologie", "label": "Morphologie" },
+        { "id": "wirte", "label": "Endwirt/Zwischenwirt" },
+        { "id": "lebenszyklus", "label": "Lebenszyklus/Entwicklung" },
+        { "id": "pathogenese", "label": "Pathogenese" },
+        { "id": "klinik", "label": "Klinik/Symptome" },
+        { "id": "diagnose", "label": "Diagnose" },
+        { "id": "therapie", "label": "Therapie" },
+        { "id": "prophylaxe", "label": "Prophylaxe" },
+        { "id": "epidemiologie", "label": "Epidemiologie" }
+      ]
+    },
+    {
+      "id": "flags",
+      "label": "Merkmale",
+      "values": [
+        { "id": "zoonose", "label": "Zoonose" },
+        { "id": "meldepflichtig", "label": "Meldepflichtig" }
+      ]
+    }
+  ]
+}
