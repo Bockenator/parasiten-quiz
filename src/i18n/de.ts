@@ -154,4 +154,55 @@ export const de = {
     tagsLabel: 'Tags',
     backToSettings: 'Zurück zu Einstellungen',
   },
+  help: {
+    title: 'Anleitung',
+    intro: 'Ein kurzer Überblick, wie du mit ParaQuiz am effektivsten lernst.',
+    navLabel: 'Anleitung öffnen',
+    backToDashboard: 'Zur Startseite',
+
+    modesTitle: 'Lernmodus und Prüfungsmodus',
+    modesLearnLabel: 'Lernmodus („Weiterlernen“)',
+    modesLearnText:
+      'Wählt Fragen nach dem Spaced-Repetition-Algorithmus: fällige Wiederholungen zuerst, neue Karten nach Wichtigkeit (***-Parasiten zuerst). Ideal fürs tägliche Lernen ohne Zeitdruck.',
+    modesExamLabel: 'Prüfungsmodus („Prüfung“)',
+    modesExamText:
+      'Ein fester Fragensatz in wählbarer Größe (10/20/50/Alle) simuliert eine echte Prüfung. Am Ende gibt es eine Note — dein Lernfortschritt wird dabei trotzdem aktualisiert.',
+
+    typesTitle: 'Die Fragetypen',
+    typesIntro: 'Nach jeder Antwort gibt es sofort Feedback mit Erklärung und Quellenangabe.',
+    typesList: [
+      { label: 'Single Choice', text: 'Eine richtige Antwort auswählen.' },
+      { label: 'Multiple Choice', text: 'Mehrere richtige Antworten sind möglich.' },
+      { label: 'Wahr/Falsch', text: 'Eine Aussage bewerten.' },
+      { label: 'Lückentext', text: 'Begriff eintippen — die Prüfung ist tolerant gegenüber kleinen Tippfehlern.' },
+      { label: 'Zuordnen', text: 'Passende Paare bilden, z. B. Erreger und Wirt.' },
+      { label: 'Reihenfolge', text: 'Schritte in die richtige Reihenfolge bringen, z. B. einen Lebenszyklus.' },
+      { label: 'Karteikarte', text: 'Antwort selbst aufdecken und ehrlich einschätzen: gewusst oder nicht gewusst.' },
+      { label: 'Fallbeispiel', text: 'Ein klinischer Fall mit Single-Choice-Antwort.' },
+    ],
+
+    srsTitle: 'Wie merkt sich die App, was du kannst?',
+    srsText:
+      'Jede Frage hat ein Fälligkeitsdatum. Beantwortest du sie richtig, wächst der Abstand bis zur nächsten Wiederholung. Bei einer falschen oder unsicheren Antwort kommt sie bald wieder. So konzentriert sich deine Lernzeit automatisch auf das, was du noch nicht sicher beherrschst — ehrliches Antworten lohnt sich also.',
+
+    categoriesTitle: 'Kategorien anpassen',
+    categoriesText:
+      'Über „Kategorien wählen“ filterst du die Fragenbank nach Parasitengruppe, Wirtstier, Thema, Zoonose und mehr. Schnellfilter wie „Nur ***“ oder „Nur Zoonosen“ helfen beim gezielten Üben. Deine Auswahl wird automatisch gespeichert und gilt für Lern- und Prüfungsmodus.',
+
+    progressTitle: 'Fortschritt, Serie und Abzeichen',
+    progressText:
+      'Der Tagesziel-Ring auf dem Dashboard zeigt, wie viele Fragen du heute schon beantwortet hast. Die Serie zählt aufeinanderfolgende Lerntage, XP und Level steigen mit jeder Antwort, und Abzeichen schalten sich bei bestimmten Meilensteinen frei.',
+
+    statsTitle: 'Statistik',
+    statsText:
+      'Zeigt gesehene und beherrschte Fragen, heute fällige Wiederholungen, deine Trefferquote sowie den Fortschritt je Parasitengruppe und deine Lernaktivität der letzten 14 Tage.',
+
+    settingsTitle: 'Einstellungen',
+    settingsText:
+      'Tagesziel und maximale neue Karten pro Tag anpassen, Design (Hell/Dunkel/System), Ton und Animationen einstellen — und deine Daten exportieren oder importieren, um sie zu sichern oder auf ein anderes Gerät zu übertragen.',
+
+    dataTitle: 'Deine Daten',
+    dataText:
+      'Alles bleibt lokal auf deinem Gerät gespeichert — es gibt kein Konto und keinen Server. Nutze „Daten exportieren“ in den Einstellungen, um deinen Fortschritt zu sichern, etwa vor einem Gerätewechsel.',
+  },
 } as const;

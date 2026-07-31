@@ -7,6 +7,7 @@ import { Result } from './pages/Result';
 import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 import { Review } from './pages/Review';
+import { Help } from './pages/Help';
 
 const navItems = [
   { to: '/', label: de.nav.dashboard, end: true },
@@ -20,9 +21,24 @@ const navItems = [
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <header className="border-b border-slate-200 px-4 py-3 dark:border-slate-800">
-        <span className="text-lg font-bold">{de.appName}</span>
-        <span className="ml-2 text-sm text-slate-500 dark:text-slate-400">{de.appTagline}</span>
+      <header className="flex items-center justify-between border-b border-slate-200 px-4 py-3 dark:border-slate-800">
+        <div>
+          <span className="text-lg font-bold">{de.appName}</span>
+          <span className="ml-2 text-sm text-slate-500 dark:text-slate-400">{de.appTagline}</span>
+        </div>
+        <NavLink
+          to="/anleitung"
+          aria-label={de.help.navLabel}
+          className={({ isActive }) =>
+            `flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border text-sm font-semibold ${
+              isActive
+                ? 'border-teal-500 bg-teal-500 text-white'
+                : 'border-slate-300 text-slate-600 hover:border-teal-400 dark:border-slate-700 dark:text-slate-300'
+            }`
+          }
+        >
+          ?
+        </NavLink>
       </header>
 
       <main className="flex flex-1 flex-col">
@@ -34,6 +50,7 @@ function App() {
           <Route path="/statistik" element={<Stats />} />
           <Route path="/einstellungen" element={<Settings />} />
           <Route path="/review-modus" element={<Review />} />
+          <Route path="/anleitung" element={<Help />} />
         </Routes>
       </main>
 
