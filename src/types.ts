@@ -223,4 +223,14 @@ export const questionSchema = questionUnionSchema.superRefine((q, ctx) => {
 export type Question = z.infer<typeof questionUnionSchema>;
 export type QuestionType = Question['type'];
 
+export type SingleChoiceQuestion = Extract<Question, { type: 'single_choice' }>;
+export type MultipleChoiceQuestion = Extract<Question, { type: 'multiple_choice' }>;
+export type TrueFalseQuestion = Extract<Question, { type: 'true_false' }>;
+export type ClozeQuestion = Extract<Question, { type: 'cloze' }>;
+export type MatchingQuestion = Extract<Question, { type: 'matching' }>;
+export type OrderingQuestion = Extract<Question, { type: 'ordering' }>;
+export type ImageIdQuestion = Extract<Question, { type: 'image_id' }>;
+export type FlashcardQuestion = Extract<Question, { type: 'flashcard' }>;
+export type CaseVignetteQuestion = Extract<Question, { type: 'case_vignette' }>;
+
 export const questionsSchema = z.array(questionSchema);

@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Generated from content/*.json at dev/build start (see vite.config.ts) — content/ is the source of truth.
+public/data/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
