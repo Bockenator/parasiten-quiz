@@ -39,7 +39,7 @@ export const de = {
     restartSession: 'Neue Session starten',
     backToDashboard: 'Zur Startseite',
     filteredEmptyTitle: 'Keine Fragen für diese Auswahl',
-    filteredEmptyText: 'Für die aktuelle Kategorie-Auswahl gibt es keine passenden Fragen. Passe deine Auswahl an.',
+    filteredEmptyText: 'Für deine aktuelle Kategorien- und Fragetypen-Auswahl gibt es keine passenden Fragen. Passe deine Auswahl an.',
     adjustCategories: 'Kategorien anpassen',
   },
   categories: {
@@ -56,6 +56,10 @@ export const de = {
     quickFilterNematodes: 'Nur Nematoden',
     savedHint: 'Die Auswahl wird automatisch gespeichert.',
     goToQuiz: 'Zum Quiz',
+    typeWeightsTitle: 'Fragetypen-Mix',
+    typeWeightsIntro: 'Wie oft soll jeder Fragetyp in deiner Session vorkommen?',
+    typeWeightsReset: 'Zurücksetzen',
+    typeWeightLevels: ['Nie', 'Selten', 'Normal', 'Häufig'] as [string, string, string, string],
   },
   dashboard: {
     loading: 'Dashboard wird geladen…',
@@ -187,7 +191,7 @@ export const de = {
 
     categoriesTitle: 'Kategorien anpassen',
     categoriesText:
-      'Über „Kategorien wählen“ filterst du die Fragenbank nach Parasitengruppe, Wirtstier, Thema, Zoonose und mehr. Schnellfilter wie „Nur ***“ oder „Nur Zoonosen“ helfen beim gezielten Üben. Deine Auswahl wird automatisch gespeichert und gilt für Lern- und Prüfungsmodus.',
+      'Über „Kategorien wählen“ filterst du die Fragenbank nach Parasitengruppe, Wirtstier, Thema, Zoonose und mehr. Schnellfilter wie „Nur ***“ oder „Nur Zoonosen“ helfen beim gezielten Üben. Dort stellst du im Abschnitt „Fragetypen-Mix“ auch ein, wie oft welcher Fragetyp vorkommen soll (bis hin zu „Nie“, um einen Typ ganz auszuschließen). Deine Auswahl wird automatisch gespeichert und gilt für Lern- und Prüfungsmodus.',
 
     progressTitle: 'Fortschritt, Serie und Abzeichen',
     progressText:
@@ -204,5 +208,15 @@ export const de = {
     dataTitle: 'Deine Daten',
     dataText:
       'Alles bleibt lokal auf deinem Gerät gespeichert — es gibt kein Konto und keinen Server. Nutze „Daten exportieren“ in den Einstellungen, um deinen Fortschritt zu sichern, etwa vor einem Gerätewechsel.',
+  },
+  questionTypes: {
+    single_choice: 'Single Choice',
+    multiple_choice: 'Multiple Choice',
+    true_false: 'Wahr/Falsch',
+    cloze: 'Lückentext',
+    matching: 'Zuordnen',
+    ordering: 'Reihenfolge',
+    flashcard: 'Karteikarte',
+    case_vignette: 'Fallbeispiel',
   },
 } as const;

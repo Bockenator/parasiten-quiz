@@ -3,8 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import { de } from '../i18n/de';
 import { loadCategories, loadQuestions } from '../lib/loadContent';
 import { filterQuestions } from '../lib/filterQuestions';
-import { getCategorySelection, saveCategorySelection } from '../lib/storage';
-import { defaultCategorySelection, type Categories, type CategoryDimensionId, type CategorySelection, type Question } from '../types';
+import { getCategorySelection, getQuestionTypeWeights, saveCategorySelection, saveQuestionTypeWeights } from '../lib/storage';
+import {
+  activeQuestionTypes,
+  defaultCategorySelection,
+  defaultQuestionTypeWeights,
+  type Categories,
+  type CategoryDimensionId,
+  type CategorySelection,
+  type Question,
+  type QuestionTypeWeights,
+} from '../types';
 import { PrimaryButton } from '../components/PrimaryButton';
 
 type LoadState =
@@ -16,6 +25,7 @@ export function Categories() {
   const navigate = useNavigate();
   const [loadState, setLoadState] = useState<LoadState>({ status: 'loading' });
   const [selection, setSelection] = useState<CategorySelection>(defaultCategorySelection);
+  const [typeWeights, setTypeWeights] = useState<QuestionTypeWeights>(defaultQuestionTypeWeights);
 
   useEffect(() => {
     let cancelled = false;
@@ -24,6 +34,7 @@ export function Categories() {
         if (cancelled) return;
         setLoadState({ status: 'ready', categories, questions });
         setSelection(getCategorySelection());
+        setTypeWeights(getQuestionTypeWeights());
       })
       .catch(() => {
         if (!cancelled) setLoadState({ status: 'error' });
@@ -36,6 +47,17 @@ export function Categories() {
   function applySelection(next: CategorySelection) {
     setSelection(next);
     saveCategorySelection(next);
+  }
+
+  function updateTypeWeight(type: string, weight: number) {
+    const next = { ...typeWeights, [type]: weight };
+    setTypeWeights(next);
+    saveQuestionTypeWeights(next);
+  }
+
+  function resetTypeWeights() {
+    setTypeWeights(defaultQuestionTypeWeights);
+    saveQuestionTypeWeights(defaultQuestionTypeWeights);
   }
 
   function toggleValue(dimension: CategoryDimensionId, valueId: string) {
@@ -84,7 +106,9 @@ export function Categories() {
   }
 
   const { categories, questions } = loadState;
-  const matchedCount = filterQuestions(questions, selection).length;
+  const categoryFiltered = filterQuestions(questions, selection);
+  const matchedCount = categoryFiltered.filter((q) => (typeWeights[q.type] ?? 2) > 0).length;
+  const totalTypeWeight = activeQuestionTypes.reduce((sum, type) => sum + (typeWeights[type] ?? 2), 0);
 
   return (
     <div className="mx-auto flex w-full max-w-md flex-1 flex-col gap-6 px-4 py-6">
@@ -142,6 +166,46 @@ export function Categories() {
           </div>
         </div>
       ))}
+
+      <div>
+        <div className="flex items-center justify-between">
+          <p className="text-sm font-medium text-slate-600 dark:text-slate-300">{de.categories.typeWeightsTitle}</p>
+          <button
+            type="button"
+            onClick={resetTypeWeights}
+            className="text-xs font-medium text-teal-700 underline dark:text-teal-400"
+          >
+            {de.categories.typeWeightsReset}
+          </button>
+        </div>
+        <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{de.categories.typeWeightsIntro}</p>
+        <div className="mt-3 flex flex-col gap-4">
+          {activeQuestionTypes.map((type) => {
+            const weight = typeWeights[type] ?? 2;
+            const pct = totalTypeWeight > 0 ? Math.round((weight / totalTypeWeight) * 100) : 0;
+            return (
+              <div key={type}>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-medium">{de.questionTypes[type]}</span>
+                  <span className="text-slate-500 dark:text-slate-400">
+                    {de.categories.typeWeightLevels[weight]} · {pct}%
+                  </span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={3}
+                  step={1}
+                  value={weight}
+                  onChange={(event) => updateTypeWeight(type, Number(event.target.value))}
+                  aria-label={de.questionTypes[type]}
+                  className="mt-1.5 w-full accent-teal-600"
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       <p className="text-xs text-slate-400 dark:text-slate-500">{de.categories.savedHint}</p>
 

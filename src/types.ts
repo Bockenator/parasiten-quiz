@@ -223,6 +223,33 @@ export const questionSchema = questionUnionSchema.superRefine((q, ctx) => {
 export type Question = z.infer<typeof questionUnionSchema>;
 export type QuestionType = Question['type'];
 
+// Fragetypen-Mix (Kategorien-Seite): relative Gewichte pro Fragetyp, mit denen
+// Nutzer die Zusammensetzung ihrer Session steuern können. image_id bleibt
+// ausgeschlossen (aktuell keine Bild-Fragen vorhanden, siehe CLAUDE.md).
+export const activeQuestionTypes = [
+  'single_choice',
+  'multiple_choice',
+  'true_false',
+  'cloze',
+  'matching',
+  'ordering',
+  'flashcard',
+  'case_vignette',
+] as const;
+export type ActiveQuestionType = (typeof activeQuestionTypes)[number];
+
+// Gewicht 0 = Typ vollständig ausschließen, 1–3 = relative Häufigkeit
+// (Selten/Normal/Häufig). Als offener string-Record statt Enum-Record
+// modelliert, damit alte gespeicherte Daten auch nach künftigen Änderungen
+// an activeQuestionTypes noch valide bleiben (fehlende Schlüssel fallen beim
+// Lesen auf den Default zurück, siehe lib/selectSession.ts).
+export const questionTypeWeightsSchema = z.record(z.string(), z.number().int().min(0).max(3));
+export type QuestionTypeWeights = z.infer<typeof questionTypeWeightsSchema>;
+
+export const defaultQuestionTypeWeights: QuestionTypeWeights = Object.fromEntries(
+  activeQuestionTypes.map((type) => [type, 2]),
+);
+
 // Spaced-Repetition-Fortschritt pro Frage (SM-2), siehe src/lib/srs.ts.
 export const cardProgressSchema = z.object({
   id: z.string().min(1),
@@ -338,5 +365,7 @@ export const exportedDataSchema = z.object({
   categorySelection: categorySelectionSchema,
   gamification: gamificationStateSchema,
   settings: settingsSchema,
+  // optional: ältere Exporte (vor dem Fragetypen-Mix-Feature) haben dieses Feld nicht.
+  questionTypeWeights: questionTypeWeightsSchema.optional(),
 });
 export type ExportedData = z.infer<typeof exportedDataSchema>;

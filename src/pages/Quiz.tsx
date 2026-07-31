@@ -12,6 +12,7 @@ import {
   getCategorySelection,
   getGamificationState,
   getProgress,
+  getQuestionTypeWeights,
   getSettings,
   saveGamificationState,
   saveLastSessionResult,
@@ -61,12 +62,14 @@ export function Quiz() {
             setLoadState({ status: 'filtered-empty' });
             return;
           }
+          const typeWeights = getQuestionTypeWeights();
           if (navState?.mode === 'exam') {
-            builtSession = selectExamSession(filteredQuestions, navState.count);
+            builtSession = selectExamSession(filteredQuestions, navState.count, typeWeights);
             resolvedMode = 'exam';
           } else {
             builtSession = selectLearnSession(filteredQuestions, getAllProgress(), {
               maxNew: getSettings().maxNewCardsPerDay,
+              typeWeights,
             });
             resolvedMode = 'learn';
           }

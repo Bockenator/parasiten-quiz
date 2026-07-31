@@ -4,10 +4,12 @@ import {
   categorySelectionSchema,
   defaultCategorySelection,
   defaultGamificationState,
+  defaultQuestionTypeWeights,
   defaultSettings,
   exportedDataSchema,
   gamificationStateSchema,
   progressMapSchema,
+  questionTypeWeightsSchema,
   sessionResultSchema,
   settingsSchema,
   type CardProgress,
@@ -15,6 +17,7 @@ import {
   type ExportedData,
   type GamificationState,
   type ProgressMap,
+  type QuestionTypeWeights,
   type SessionResult,
   type Settings,
 } from '../types';
@@ -24,6 +27,7 @@ const CATEGORY_SELECTION_KEY = 'paraquiz:categorySelection:v1';
 const GAMIFICATION_KEY = 'paraquiz:gamification:v1';
 const LAST_SESSION_RESULT_KEY = 'paraquiz:lastSessionResult:v1';
 const SETTINGS_KEY = 'paraquiz:settings:v1';
+const QUESTION_TYPE_WEIGHTS_KEY = 'paraquiz:questionTypeWeights:v1';
 
 function readJson(key: string): unknown {
   try {
@@ -111,6 +115,17 @@ export function saveSettings(settings: Settings): void {
   writeJson(SETTINGS_KEY, settings);
 }
 
+export function getQuestionTypeWeights(): QuestionTypeWeights {
+  const raw = readJson(QUESTION_TYPE_WEIGHTS_KEY);
+  if (raw === undefined) return defaultQuestionTypeWeights;
+  const result = questionTypeWeightsSchema.safeParse(raw);
+  return result.success ? { ...defaultQuestionTypeWeights, ...result.data } : defaultQuestionTypeWeights;
+}
+
+export function saveQuestionTypeWeights(weights: QuestionTypeWeights): void {
+  writeJson(QUESTION_TYPE_WEIGHTS_KEY, weights);
+}
+
 /** Setzt Lernfortschritt und Gamification zurück, lässt Kategorie-Auswahl und Einstellungen unangetastet. */
 export function resetLearningProgress(): void {
   writeJson(PROGRESS_KEY, {});
@@ -130,6 +145,7 @@ export function exportAllData(): ExportedData {
     categorySelection: getCategorySelection(),
     gamification: getGamificationState(),
     settings: getSettings(),
+    questionTypeWeights: getQuestionTypeWeights(),
   };
 }
 
@@ -145,5 +161,7 @@ export function importAllData(raw: unknown): ImportResult {
   writeJson(CATEGORY_SELECTION_KEY, data.categorySelection);
   writeJson(GAMIFICATION_KEY, data.gamification);
   writeJson(SETTINGS_KEY, data.settings);
+  // optional: aeltere Exporte (vor dem Fragetypen-Mix-Feature) haben dieses Feld nicht.
+  writeJson(QUESTION_TYPE_WEIGHTS_KEY, data.questionTypeWeights ?? defaultQuestionTypeWeights);
   return { success: true };
 }

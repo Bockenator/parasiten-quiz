@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { defaultCategorySelection, defaultGamificationState, defaultSettings, type SessionResult } from '../types';
+import { defaultCategorySelection, defaultGamificationState, defaultQuestionTypeWeights, defaultSettings, type SessionResult } from '../types';
 import { createInitialProgress } from './srs';
 import {
   exportAllData,
@@ -8,6 +8,7 @@ import {
   getGamificationState,
   getLastSessionResult,
   getProgress,
+  getQuestionTypeWeights,
   getSettings,
   importAllData,
   resetAllProgress,
@@ -16,6 +17,7 @@ import {
   saveGamificationState,
   saveLastSessionResult,
   saveProgress,
+  saveQuestionTypeWeights,
   saveSettings,
 } from './storage';
 
@@ -122,6 +124,26 @@ describe('storage', () => {
     expect(getSettings()).toEqual(defaultSettings);
   });
 
+  it('returns the default question type weights when nothing was saved yet', () => {
+    expect(getQuestionTypeWeights()).toEqual(defaultQuestionTypeWeights);
+  });
+
+  it('round-trips saved question type weights', () => {
+    const weights = { ...defaultQuestionTypeWeights, matching: 3, flashcard: 0 };
+    saveQuestionTypeWeights(weights);
+    expect(getQuestionTypeWeights()).toEqual(weights);
+  });
+
+  it('falls back to default question type weights when the stored value fails schema validation', () => {
+    localStorage.setItem('paraquiz:questionTypeWeights:v1', JSON.stringify({ matching: 'viel' }));
+    expect(getQuestionTypeWeights()).toEqual(defaultQuestionTypeWeights);
+  });
+
+  it('fills in missing keys of a partially saved question type weights object with defaults', () => {
+    localStorage.setItem('paraquiz:questionTypeWeights:v1', JSON.stringify({ matching: 3 }));
+    expect(getQuestionTypeWeights()).toEqual({ ...defaultQuestionTypeWeights, matching: 3 });
+  });
+
   it('resetLearningProgress clears progress and gamification but keeps category selection and settings', () => {
     saveProgress(createInitialProgress('q_1'));
     saveGamificationState({ totalXp: 500, streak: { current: 10, longest: 10, lastStudyDate: '2026-01-10' } });
@@ -154,6 +176,7 @@ describe('storage', () => {
       saveCategorySelection({ ...defaultCategorySelection, class: ['nematoden'] });
       saveGamificationState({ totalXp: 40, streak: { current: 2, longest: 2, lastStudyDate: '2026-01-05' } });
       saveSettings({ ...defaultSettings, theme: 'dark' });
+      saveQuestionTypeWeights({ ...defaultQuestionTypeWeights, matching: 3, flashcard: 0 });
 
       const exported = exportAllData();
       expect(exported.version).toBe(1);
@@ -166,6 +189,7 @@ describe('storage', () => {
       expect(getCategorySelection()).toEqual(exported.categorySelection);
       expect(getGamificationState()).toEqual(exported.gamification);
       expect(getSettings()).toEqual(exported.settings);
+      expect(getQuestionTypeWeights()).toEqual(exported.questionTypeWeights);
     });
 
     it('rejects data that does not match the expected shape and leaves storage untouched', () => {
@@ -173,6 +197,13 @@ describe('storage', () => {
       const result = importAllData({ nonsense: true });
       expect(result.success).toBe(false);
       expect(getSettings().dailyGoal).toBe(33);
+    });
+
+    it('imports an older export without questionTypeWeights and falls back to the default', () => {
+      const { questionTypeWeights: _omit, ...legacyExport } = exportAllData();
+      const result = importAllData(legacyExport);
+      expect(result.success).toBe(true);
+      expect(getQuestionTypeWeights()).toEqual(defaultQuestionTypeWeights);
     });
   });
 });
