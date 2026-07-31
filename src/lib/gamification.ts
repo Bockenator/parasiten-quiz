@@ -29,10 +29,6 @@ export function updateStreak(streak: StreakState, today: Date = new Date()): Str
   return { current, longest: Math.max(streak.longest, current), lastStudyDate: todayKey };
 }
 
-// Default-Tagesziel für den Fortschrittsring auf dem Dashboard. Wird konfigurierbar,
-// sobald Phase 7 die Einstellungen-Seite baut; bis dahin ein fester, sinnvoller Wert.
-export const DEFAULT_DAILY_GOAL = 10;
-
 export function countAnsweredToday(progress: ProgressMap, today: Date = new Date()): number {
   const todayKey = toDateKey(today);
   return Object.values(progress).reduce(

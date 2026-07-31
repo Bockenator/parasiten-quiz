@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { de } from '../i18n/de';
+import { playCorrectSound, playIncorrectSound } from '../lib/sound';
+import { getSettings } from '../lib/storage';
 import type { Question } from '../types';
 import { FeedbackBanner } from './FeedbackBanner';
 import { PrimaryButton } from './PrimaryButton';
@@ -20,31 +22,39 @@ export function QuestionCard({ question, onNext }: QuestionCardProps) {
   const [correct, setCorrect] = useState<boolean | null>(null);
   const submitted = correct !== null;
 
+  function handleSubmit(isCorrect: boolean) {
+    setCorrect(isCorrect);
+    if (getSettings().soundEnabled) {
+      if (isCorrect) playCorrectSound();
+      else playIncorrectSound();
+    }
+  }
+
   function renderQuestion() {
     switch (question.type) {
       case 'single_choice':
-        return <ChoiceQuestion question={question} submitted={submitted} onSubmit={setCorrect} />;
+        return <ChoiceQuestion question={question} submitted={submitted} onSubmit={handleSubmit} />;
       case 'case_vignette':
         return (
           <ChoiceQuestion
             question={question}
             submitted={submitted}
-            onSubmit={setCorrect}
+            onSubmit={handleSubmit}
             badge={de.quiz.caseVignetteLabel}
           />
         );
       case 'multiple_choice':
-        return <MultipleChoiceQuestion question={question} submitted={submitted} onSubmit={setCorrect} />;
+        return <MultipleChoiceQuestion question={question} submitted={submitted} onSubmit={handleSubmit} />;
       case 'true_false':
-        return <TrueFalseQuestion question={question} submitted={submitted} onSubmit={setCorrect} />;
+        return <TrueFalseQuestion question={question} submitted={submitted} onSubmit={handleSubmit} />;
       case 'cloze':
-        return <ClozeQuestionView question={question} submitted={submitted} onSubmit={setCorrect} />;
+        return <ClozeQuestionView question={question} submitted={submitted} onSubmit={handleSubmit} />;
       case 'matching':
-        return <MatchingQuestion question={question} submitted={submitted} onSubmit={setCorrect} />;
+        return <MatchingQuestion question={question} submitted={submitted} onSubmit={handleSubmit} />;
       case 'ordering':
-        return <OrderingQuestion question={question} submitted={submitted} onSubmit={setCorrect} />;
+        return <OrderingQuestion question={question} submitted={submitted} onSubmit={handleSubmit} />;
       case 'flashcard':
-        return <FlashcardQuestion question={question} submitted={submitted} onSubmit={setCorrect} />;
+        return <FlashcardQuestion question={question} submitted={submitted} onSubmit={handleSubmit} />;
       case 'image_id':
         // Keine Bilder in der Fragenbank vorhanden (siehe CLAUDE.md) — Typ wird aktuell nicht generiert.
         return null;

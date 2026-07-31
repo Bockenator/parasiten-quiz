@@ -12,6 +12,7 @@ import {
   getCategorySelection,
   getGamificationState,
   getProgress,
+  getSettings,
   saveGamificationState,
   saveLastSessionResult,
   saveProgress,
@@ -64,7 +65,9 @@ export function Quiz() {
             builtSession = selectExamSession(filteredQuestions, navState.count);
             resolvedMode = 'exam';
           } else {
-            builtSession = selectLearnSession(filteredQuestions, getAllProgress());
+            builtSession = selectLearnSession(filteredQuestions, getAllProgress(), {
+              maxNew: getSettings().maxNewCardsPerDay,
+            });
             resolvedMode = 'learn';
           }
         }

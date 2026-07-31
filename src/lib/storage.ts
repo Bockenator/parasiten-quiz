@@ -4,20 +4,26 @@ import {
   categorySelectionSchema,
   defaultCategorySelection,
   defaultGamificationState,
+  defaultSettings,
+  exportedDataSchema,
   gamificationStateSchema,
   progressMapSchema,
   sessionResultSchema,
+  settingsSchema,
   type CardProgress,
   type CategorySelection,
+  type ExportedData,
   type GamificationState,
   type ProgressMap,
   type SessionResult,
+  type Settings,
 } from '../types';
 
 const PROGRESS_KEY = 'paraquiz:progress:v1';
 const CATEGORY_SELECTION_KEY = 'paraquiz:categorySelection:v1';
 const GAMIFICATION_KEY = 'paraquiz:gamification:v1';
 const LAST_SESSION_RESULT_KEY = 'paraquiz:lastSessionResult:v1';
+const SETTINGS_KEY = 'paraquiz:settings:v1';
 
 function readJson(key: string): unknown {
   try {
@@ -92,4 +98,52 @@ export function getLastSessionResult(): SessionResult | undefined {
 
 export function saveLastSessionResult(result: SessionResult): void {
   writeJson(LAST_SESSION_RESULT_KEY, result);
+}
+
+export function getSettings(): Settings {
+  const raw = readJson(SETTINGS_KEY);
+  if (raw === undefined) return defaultSettings;
+  const result = settingsSchema.safeParse(raw);
+  return result.success ? result.data : defaultSettings;
+}
+
+export function saveSettings(settings: Settings): void {
+  writeJson(SETTINGS_KEY, settings);
+}
+
+/** Setzt Lernfortschritt und Gamification zurück, lässt Kategorie-Auswahl und Einstellungen unangetastet. */
+export function resetLearningProgress(): void {
+  writeJson(PROGRESS_KEY, {});
+  writeJson(GAMIFICATION_KEY, defaultGamificationState);
+  try {
+    localStorage.removeItem(LAST_SESSION_RESULT_KEY);
+  } catch {
+    // ignorieren — betrifft nur eine sehr kurzlebige Momentaufnahme
+  }
+}
+
+export function exportAllData(): ExportedData {
+  return {
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    progress: getAllProgress(),
+    categorySelection: getCategorySelection(),
+    gamification: getGamificationState(),
+    settings: getSettings(),
+  };
+}
+
+export type ImportResult = { success: true } | { success: false; error: string };
+
+export function importAllData(raw: unknown): ImportResult {
+  const result = exportedDataSchema.safeParse(raw);
+  if (!result.success) {
+    return { success: false, error: 'invalid-format' };
+  }
+  const data = result.data;
+  writeJson(PROGRESS_KEY, data.progress);
+  writeJson(CATEGORY_SELECTION_KEY, data.categorySelection);
+  writeJson(GAMIFICATION_KEY, data.gamification);
+  writeJson(SETTINGS_KEY, data.settings);
+  return { success: true };
 }

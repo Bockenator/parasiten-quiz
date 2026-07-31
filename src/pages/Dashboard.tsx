@@ -1,17 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { de } from '../i18n/de';
-import {
-  computeBadges,
-  countAnsweredToday,
-  DEFAULT_DAILY_GOAL,
-  levelForXp,
-  xpIntoCurrentLevel,
-  type Badge,
-} from '../lib/gamification';
+import { computeBadges, countAnsweredToday, levelForXp, xpIntoCurrentLevel, type Badge } from '../lib/gamification';
 import { loadCategories, loadQuestions } from '../lib/loadContent';
 import { computeClassStats, type CategoryStat } from '../lib/stats';
-import { getAllProgress, getGamificationState } from '../lib/storage';
+import { getAllProgress, getGamificationState, getSettings } from '../lib/storage';
 import type { GamificationState } from '../types';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { ProgressBar } from '../components/ProgressBar';
@@ -24,6 +17,7 @@ type LoadState =
       status: 'ready';
       gamification: GamificationState;
       answeredToday: number;
+      dailyGoal: number;
       classStats: CategoryStat[];
       badges: Badge[];
     };
@@ -46,6 +40,7 @@ export function Dashboard() {
           status: 'ready',
           gamification,
           answeredToday: countAnsweredToday(progress),
+          dailyGoal: getSettings().dailyGoal,
           classStats: computeClassStats(questions, progress, categories),
           badges: computeBadges(questions, progress, gamification.streak.current),
         });
@@ -65,10 +60,10 @@ export function Dashboard() {
     return <StatusMessage text={de.dashboard.loadError} />;
   }
 
-  const { gamification, answeredToday, classStats, badges } = loadState;
+  const { gamification, answeredToday, dailyGoal, classStats, badges } = loadState;
   const level = levelForXp(gamification.totalXp);
   const xpInLevel = xpIntoCurrentLevel(gamification.totalXp);
-  const dailyGoalReached = answeredToday >= DEFAULT_DAILY_GOAL;
+  const dailyGoalReached = answeredToday >= dailyGoal;
 
   return (
     <div className="mx-auto flex w-full max-w-md flex-1 flex-col gap-6 px-4 py-6">
@@ -81,15 +76,15 @@ export function Dashboard() {
 
       <div className="flex items-center gap-4 rounded-lg border border-slate-200 p-4 dark:border-slate-800">
         <div className="relative flex-shrink-0">
-          <ProgressRing value={answeredToday} max={DEFAULT_DAILY_GOAL} size={80} strokeWidth={8} />
+          <ProgressRing value={answeredToday} max={dailyGoal} size={80} strokeWidth={8} />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
             <span className="text-sm font-semibold">{answeredToday}</span>
-            <span className="text-xs text-slate-500 dark:text-slate-400">/{DEFAULT_DAILY_GOAL}</span>
+            <span className="text-xs text-slate-500 dark:text-slate-400">/{dailyGoal}</span>
           </div>
         </div>
         <div>
           <p className="text-sm font-medium">
-            {dailyGoalReached ? de.dashboard.dailyGoalReached : de.dashboard.dailyGoalLabel(answeredToday, DEFAULT_DAILY_GOAL)}
+            {dailyGoalReached ? de.dashboard.dailyGoalReached : de.dashboard.dailyGoalLabel(answeredToday, dailyGoal)}
           </p>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
             {de.dashboard.levelLabel(level)} · {de.dashboard.xpLabel(gamification.totalXp)}

@@ -307,3 +307,36 @@ export const sessionResultSchema = z.object({
   wrongQuestionIds: z.array(z.string()),
 });
 export type SessionResult = z.infer<typeof sessionResultSchema>;
+
+// Einstellungen (Plan Abschnitt 9.6): Lernziele, Darstellung.
+export const themePreferenceSchema = z.enum(['light', 'dark', 'system']);
+export type ThemePreference = z.infer<typeof themePreferenceSchema>;
+
+export const settingsSchema = z.object({
+  theme: themePreferenceSchema,
+  dailyGoal: z.number().int().min(1),
+  maxNewCardsPerDay: z.number().int().min(1),
+  soundEnabled: z.boolean(),
+  animationsEnabled: z.boolean(),
+});
+export type Settings = z.infer<typeof settingsSchema>;
+
+export const defaultSettings: Settings = {
+  theme: 'system',
+  dailyGoal: 10,
+  maxNewCardsPerDay: 20,
+  soundEnabled: true,
+  animationsEnabled: true,
+};
+
+// Export/Import (Plan Abschnitt 9.6): Bündelt alle lokal gespeicherten Daten
+// für ein Backup bzw. einen Geräte-/Browserwechsel.
+export const exportedDataSchema = z.object({
+  version: z.literal(1),
+  exportedAt: z.string().min(1),
+  progress: progressMapSchema,
+  categorySelection: categorySelectionSchema,
+  gamification: gamificationStateSchema,
+  settings: settingsSchema,
+});
+export type ExportedData = z.infer<typeof exportedDataSchema>;

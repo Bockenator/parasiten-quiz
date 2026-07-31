@@ -1,17 +1,22 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { defaultCategorySelection, defaultGamificationState, type SessionResult } from '../types';
+import { defaultCategorySelection, defaultGamificationState, defaultSettings, type SessionResult } from '../types';
 import { createInitialProgress } from './srs';
 import {
+  exportAllData,
   getAllProgress,
   getCategorySelection,
   getGamificationState,
   getLastSessionResult,
   getProgress,
+  getSettings,
+  importAllData,
   resetAllProgress,
+  resetLearningProgress,
   saveCategorySelection,
   saveGamificationState,
   saveLastSessionResult,
   saveProgress,
+  saveSettings,
 } from './storage';
 
 beforeEach(() => {
@@ -100,5 +105,74 @@ describe('storage', () => {
     };
     saveLastSessionResult(result);
     expect(getLastSessionResult()).toEqual(result);
+  });
+
+  it('returns the default settings when nothing was saved yet', () => {
+    expect(getSettings()).toEqual(defaultSettings);
+  });
+
+  it('round-trips saved settings', () => {
+    const settings = { ...defaultSettings, theme: 'dark' as const, dailyGoal: 15 };
+    saveSettings(settings);
+    expect(getSettings()).toEqual(settings);
+  });
+
+  it('falls back to default settings when the stored value fails schema validation', () => {
+    localStorage.setItem('paraquiz:settings:v1', JSON.stringify({ theme: 'purple' }));
+    expect(getSettings()).toEqual(defaultSettings);
+  });
+
+  it('resetLearningProgress clears progress and gamification but keeps category selection and settings', () => {
+    saveProgress(createInitialProgress('q_1'));
+    saveGamificationState({ totalXp: 500, streak: { current: 10, longest: 10, lastStudyDate: '2026-01-10' } });
+    saveLastSessionResult({
+      mode: 'learn',
+      completedAt: '2026-01-10T12:00:00.000Z',
+      total: 5,
+      correctCount: 5,
+      xpEarned: 70,
+      streakAfter: 10,
+      wrongQuestionIds: [],
+    });
+    const selection = { ...defaultCategorySelection, class: ['nematoden'] };
+    saveCategorySelection(selection);
+    const settings = { ...defaultSettings, dailyGoal: 25 };
+    saveSettings(settings);
+
+    resetLearningProgress();
+
+    expect(getAllProgress()).toEqual({});
+    expect(getGamificationState()).toEqual(defaultGamificationState);
+    expect(getLastSessionResult()).toBeUndefined();
+    expect(getCategorySelection()).toEqual(selection);
+    expect(getSettings()).toEqual(settings);
+  });
+
+  describe('exportAllData / importAllData', () => {
+    it('exports the current state and re-imports it into a cleared store', () => {
+      saveProgress(createInitialProgress('q_1', new Date('2026-01-01T00:00:00.000Z')));
+      saveCategorySelection({ ...defaultCategorySelection, class: ['nematoden'] });
+      saveGamificationState({ totalXp: 40, streak: { current: 2, longest: 2, lastStudyDate: '2026-01-05' } });
+      saveSettings({ ...defaultSettings, theme: 'dark' });
+
+      const exported = exportAllData();
+      expect(exported.version).toBe(1);
+
+      localStorage.clear();
+      const result = importAllData(exported);
+
+      expect(result.success).toBe(true);
+      expect(getAllProgress()).toEqual(exported.progress);
+      expect(getCategorySelection()).toEqual(exported.categorySelection);
+      expect(getGamificationState()).toEqual(exported.gamification);
+      expect(getSettings()).toEqual(exported.settings);
+    });
+
+    it('rejects data that does not match the expected shape and leaves storage untouched', () => {
+      saveSettings({ ...defaultSettings, dailyGoal: 33 });
+      const result = importAllData({ nonsense: true });
+      expect(result.success).toBe(false);
+      expect(getSettings().dailyGoal).toBe(33);
+    });
   });
 });

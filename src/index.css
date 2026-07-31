@@ -1,11 +1,12 @@
 @import 'tailwindcss';
 
+/* Manuelles Dark Mode per .dark-Klasse auf <html> statt reiner OS-Präferenz,
+   damit die Einstellungen-Seite Hell/Dunkel/System umschalten kann.
+   Wird in src/lib/theme.ts gesetzt. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-}
-
-html {
-  color-scheme: light dark;
 }
 
 body {
@@ -18,4 +19,14 @@ body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+}
+
+/* "Animationen aus" (Einstellungen): Übergänge/Animationen global deaktivieren. */
+html.no-animations,
+html.no-animations *,
+html.no-animations *::before,
+html.no-animations *::after {
+  transition-duration: 0s !important;
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
 }
