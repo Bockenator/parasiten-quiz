@@ -6,6 +6,7 @@ import { Quiz } from './pages/Quiz';
 import { Result } from './pages/Result';
 import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
+import { Review } from './pages/Review';
 
 const navItems = [
   { to: '/', label: de.nav.dashboard, end: true },
@@ -32,6 +33,7 @@ function App() {
           <Route path="/ergebnis" element={<Result />} />
           <Route path="/statistik" element={<Stats />} />
           <Route path="/einstellungen" element={<Settings />} />
+          <Route path="/review-modus" element={<Review />} />
         </Routes>
       </main>
 

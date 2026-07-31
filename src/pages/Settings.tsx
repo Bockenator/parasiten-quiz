@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { de } from '../i18n/de';
 import { applyAppearanceSettings } from '../lib/theme';
 import { exportAllData, getSettings, importAllData, resetLearningProgress, saveSettings } from '../lib/storage';
@@ -149,6 +150,13 @@ export function Settings() {
             {de.settings.resetButton}
           </button>
         </div>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold">{de.settings.contentTitle}</h2>
+        <Link to="/review-modus" className="mt-3 inline-block text-sm text-teal-700 underline dark:text-teal-400">
+          {de.settings.reviewLinkLabel}
+        </Link>
       </section>
 
       {message && <p className="text-center text-sm text-teal-700 dark:text-teal-400">{message}</p>}

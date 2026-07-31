@@ -136,5 +136,22 @@ export const de = {
     resetConfirm: 'Wirklich den gesamten Lernfortschritt (SM-2-Daten, XP, Serie) zurücksetzen? Das kann nicht rückgängig gemacht werden.',
     resetSuccess: 'Lernfortschritt wurde zurückgesetzt.',
     savedHint: 'Änderungen werden automatisch gespeichert.',
+    contentTitle: 'Inhalt',
+    reviewLinkLabel: 'Fragen zur inhaltlichen Überprüfung ansehen',
+  },
+  review: {
+    title: 'Review-Modus',
+    intro:
+      'Diese Fragen wurden bei der Generierung als inhaltlich unsicher markiert. Bitte gegen die Quelle prüfen, bevor sie breiter geteilt werden.',
+    loading: 'Fragen werden geladen…',
+    loadError: 'Fragen konnten nicht geladen werden. Bitte Seite neu laden.',
+    empty: 'Aktuell sind keine Fragen zur Überprüfung markiert.',
+    countLabel: (n: number) => `${n} ${n === 1 ? 'Frage' : 'Fragen'} zur Überprüfung`,
+    parasiteLabel: 'Parasit',
+    sourceLabel: 'Quelle',
+    correctAnswerLabel: 'Richtige Antwort',
+    explanationLabel: 'Erklärung',
+    tagsLabel: 'Tags',
+    backToSettings: 'Zurück zu Einstellungen',
   },
 } as const;
