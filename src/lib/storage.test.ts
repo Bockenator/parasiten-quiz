@@ -1,12 +1,16 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { defaultCategorySelection } from '../types';
+import { defaultCategorySelection, defaultGamificationState, type SessionResult } from '../types';
 import { createInitialProgress } from './srs';
 import {
   getAllProgress,
   getCategorySelection,
+  getGamificationState,
+  getLastSessionResult,
   getProgress,
   resetAllProgress,
   saveCategorySelection,
+  saveGamificationState,
+  saveLastSessionResult,
   saveProgress,
 } from './storage';
 
@@ -63,5 +67,38 @@ describe('storage', () => {
   it('falls back to the default category selection when the stored value fails schema validation', () => {
     localStorage.setItem('paraquiz:categorySelection:v1', JSON.stringify({ nonsense: true }));
     expect(getCategorySelection()).toEqual(defaultCategorySelection);
+  });
+
+  it('returns the default gamification state when nothing was saved yet', () => {
+    expect(getGamificationState()).toEqual(defaultGamificationState);
+  });
+
+  it('round-trips a saved gamification state', () => {
+    const state = { totalXp: 150, streak: { current: 3, longest: 5, lastStudyDate: '2026-01-10' } };
+    saveGamificationState(state);
+    expect(getGamificationState()).toEqual(state);
+  });
+
+  it('falls back to the default gamification state when the stored value fails schema validation', () => {
+    localStorage.setItem('paraquiz:gamification:v1', JSON.stringify({ nonsense: true }));
+    expect(getGamificationState()).toEqual(defaultGamificationState);
+  });
+
+  it('returns undefined for the last session result when nothing was saved yet', () => {
+    expect(getLastSessionResult()).toBeUndefined();
+  });
+
+  it('round-trips a saved session result', () => {
+    const result: SessionResult = {
+      mode: 'learn',
+      completedAt: '2026-01-10T12:00:00.000Z',
+      total: 20,
+      correctCount: 15,
+      xpEarned: 170,
+      streakAfter: 4,
+      wrongQuestionIds: ['q_1', 'q_2'],
+    };
+    saveLastSessionResult(result);
+    expect(getLastSessionResult()).toEqual(result);
   });
 });

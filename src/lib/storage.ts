@@ -3,14 +3,21 @@
 import {
   categorySelectionSchema,
   defaultCategorySelection,
+  defaultGamificationState,
+  gamificationStateSchema,
   progressMapSchema,
+  sessionResultSchema,
   type CardProgress,
   type CategorySelection,
+  type GamificationState,
   type ProgressMap,
+  type SessionResult,
 } from '../types';
 
 const PROGRESS_KEY = 'paraquiz:progress:v1';
 const CATEGORY_SELECTION_KEY = 'paraquiz:categorySelection:v1';
+const GAMIFICATION_KEY = 'paraquiz:gamification:v1';
+const LAST_SESSION_RESULT_KEY = 'paraquiz:lastSessionResult:v1';
 
 function readJson(key: string): unknown {
   try {
@@ -63,4 +70,26 @@ export function getCategorySelection(): CategorySelection {
 
 export function saveCategorySelection(selection: CategorySelection): void {
   writeJson(CATEGORY_SELECTION_KEY, selection);
+}
+
+export function getGamificationState(): GamificationState {
+  const raw = readJson(GAMIFICATION_KEY);
+  if (raw === undefined) return defaultGamificationState;
+  const result = gamificationStateSchema.safeParse(raw);
+  return result.success ? result.data : defaultGamificationState;
+}
+
+export function saveGamificationState(state: GamificationState): void {
+  writeJson(GAMIFICATION_KEY, state);
+}
+
+export function getLastSessionResult(): SessionResult | undefined {
+  const raw = readJson(LAST_SESSION_RESULT_KEY);
+  if (raw === undefined) return undefined;
+  const result = sessionResultSchema.safeParse(raw);
+  return result.success ? result.data : undefined;
+}
+
+export function saveLastSessionResult(result: SessionResult): void {
+  writeJson(LAST_SESSION_RESULT_KEY, result);
 }

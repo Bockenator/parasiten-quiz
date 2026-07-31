@@ -273,3 +273,37 @@ export const defaultCategorySelection: CategorySelection = {
   flags: [],
   onlyTopImportance: false,
 };
+
+// Gamification-Zustand (Plan Abschnitt 9): XP-Gesamtstand und Lern-Serie.
+export const streakStateSchema = z.object({
+  current: z.number().int().min(0),
+  longest: z.number().int().min(0),
+  lastStudyDate: z.string().min(1).nullable(), // YYYY-MM-DD
+});
+export type StreakState = z.infer<typeof streakStateSchema>;
+
+export const gamificationStateSchema = z.object({
+  totalXp: z.number().int().min(0),
+  streak: streakStateSchema,
+});
+export type GamificationState = z.infer<typeof gamificationStateSchema>;
+
+export const defaultGamificationState: GamificationState = {
+  totalXp: 0,
+  streak: { current: 0, longest: 0, lastStudyDate: null },
+};
+
+// Ergebnis der zuletzt abgeschlossenen Session (für die Ergebnis-Seite).
+export const sessionModeSchema = z.enum(['learn', 'exam', 'review']);
+export type SessionMode = z.infer<typeof sessionModeSchema>;
+
+export const sessionResultSchema = z.object({
+  mode: sessionModeSchema,
+  completedAt: z.string().min(1),
+  total: z.number().int().min(0),
+  correctCount: z.number().int().min(0),
+  xpEarned: z.number().int().min(0),
+  streakAfter: z.number().int().min(0),
+  wrongQuestionIds: z.array(z.string()),
+});
+export type SessionResult = z.infer<typeof sessionResultSchema>;

@@ -1,29 +1,41 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { de } from '../i18n/de';
 import { filterQuestions } from '../lib/filterQuestions';
+import { computeXpEarned, updateStreak } from '../lib/gamification';
 import { loadQuestions } from '../lib/loadContent';
-import { selectLearnSession } from '../lib/selectSession';
+import { shuffle } from '../lib/random';
+import { selectExamSession, selectLearnSession } from '../lib/selectSession';
 import { createInitialProgress, qualityFromCorrect, updateCardProgress } from '../lib/srs';
-import { getAllProgress, getCategorySelection, getProgress, saveProgress } from '../lib/storage';
-import type { Question } from '../types';
+import {
+  getAllProgress,
+  getCategorySelection,
+  getGamificationState,
+  getProgress,
+  saveGamificationState,
+  saveLastSessionResult,
+  saveProgress,
+} from '../lib/storage';
+import type { Question, SessionMode } from '../types';
 import { QuestionCard } from '../components/QuestionCard';
 import { PrimaryButton } from '../components/PrimaryButton';
 
-type LoadState =
-  | { status: 'loading' }
-  | { status: 'error' }
-  | { status: 'empty' }
-  | { status: 'filtered-empty' }
-  | { status: 'ready'; filteredQuestions: Question[] };
+/** Navigations-State, mit dem andere Seiten einen Quiz-Modus anstoßen können. */
+export type QuizNavState = { mode: 'exam'; count: number | 'all' } | { mode: 'review'; questionIds: string[] } | undefined;
+
+type LoadState = { status: 'loading' } | { status: 'error' } | { status: 'empty' } | { status: 'filtered-empty' } | { status: 'ready' };
 
 export function Quiz() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const navState = location.state as QuizNavState;
+
   const [loadState, setLoadState] = useState<LoadState>({ status: 'loading' });
   const [session, setSession] = useState<Question[]>([]);
+  const [mode, setMode] = useState<SessionMode>('learn');
   const [index, setIndex] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
-  const [finished, setFinished] = useState(false);
+  const [wrongQuestionIds, setWrongQuestionIds] = useState<string[]>([]);
 
   useEffect(() => {
     let cancelled = false;
@@ -34,13 +46,37 @@ export function Quiz() {
           setLoadState({ status: 'empty' });
           return;
         }
-        const filteredQuestions = filterQuestions(questions, getCategorySelection());
-        if (filteredQuestions.length === 0) {
+
+        let builtSession: Question[];
+        let resolvedMode: SessionMode;
+
+        if (navState?.mode === 'review') {
+          const idSet = new Set(navState.questionIds);
+          builtSession = shuffle(questions.filter((q) => idSet.has(q.id)));
+          resolvedMode = 'review';
+        } else {
+          const filteredQuestions = filterQuestions(questions, getCategorySelection());
+          if (filteredQuestions.length === 0) {
+            setLoadState({ status: 'filtered-empty' });
+            return;
+          }
+          if (navState?.mode === 'exam') {
+            builtSession = selectExamSession(filteredQuestions, navState.count);
+            resolvedMode = 'exam';
+          } else {
+            builtSession = selectLearnSession(filteredQuestions, getAllProgress());
+            resolvedMode = 'learn';
+          }
+        }
+
+        if (builtSession.length === 0) {
           setLoadState({ status: 'filtered-empty' });
           return;
         }
-        setLoadState({ status: 'ready', filteredQuestions });
-        setSession(selectLearnSession(filteredQuestions, getAllProgress()));
+
+        setMode(resolvedMode);
+        setSession(builtSession);
+        setLoadState({ status: 'ready' });
       })
       .catch(() => {
         if (!cancelled) setLoadState({ status: 'error' });
@@ -48,14 +84,27 @@ export function Quiz() {
     return () => {
       cancelled = true;
     };
+    // navState wird bewusst nur beim Einstieg in die Seite ausgewertet, nicht bei jeder Änderung.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function restart() {
-    if (loadState.status !== 'ready') return;
-    setSession(selectLearnSession(loadState.filteredQuestions, getAllProgress()));
-    setIndex(0);
-    setCorrectCount(0);
-    setFinished(false);
+  function finishSession(finalCorrectCount: number, finalWrongIds: string[]) {
+    const xpEarned = computeXpEarned(finalCorrectCount, session.length);
+    const gamification = getGamificationState();
+    const streakAfter = updateStreak(gamification.streak);
+    saveGamificationState({ totalXp: gamification.totalXp + xpEarned, streak: streakAfter });
+
+    saveLastSessionResult({
+      mode,
+      completedAt: new Date().toISOString(),
+      total: session.length,
+      correctCount: finalCorrectCount,
+      xpEarned,
+      streakAfter: streakAfter.current,
+      wrongQuestionIds: finalWrongIds,
+    });
+
+    navigate('/ergebnis');
   }
 
   function handleNext(correct: boolean) {
@@ -64,9 +113,13 @@ export function Quiz() {
     const existing = getProgress(question.id) ?? createInitialProgress(question.id);
     saveProgress(updateCardProgress(existing, quality));
 
-    setCorrectCount((count) => (correct ? count + 1 : count));
+    const nextCorrectCount = correct ? correctCount + 1 : correctCount;
+    const nextWrongIds = correct ? wrongQuestionIds : [...wrongQuestionIds, question.id];
+    setCorrectCount(nextCorrectCount);
+    setWrongQuestionIds(nextWrongIds);
+
     if (index + 1 >= session.length) {
-      setFinished(true);
+      finishSession(nextCorrectCount, nextWrongIds);
     } else {
       setIndex(index + 1);
     }
@@ -92,25 +145,6 @@ export function Quiz() {
   }
   if (session.length === 0) {
     return <StatusMessage text={de.quiz.empty} />;
-  }
-
-  if (finished) {
-    return (
-      <div className="mx-auto flex max-w-md flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
-        <h1 className="text-2xl font-semibold">{de.quiz.sessionComplete}</h1>
-        <p className="text-slate-600 dark:text-slate-300">{de.quiz.sessionScore(correctCount, session.length)}</p>
-        <div className="mt-2 flex gap-3">
-          <PrimaryButton onClick={restart}>{de.quiz.restartSession}</PrimaryButton>
-          <button
-            type="button"
-            onClick={() => navigate('/')}
-            className="rounded-lg border border-slate-300 px-4 py-2 font-medium dark:border-slate-700"
-          >
-            {de.quiz.backToDashboard}
-          </button>
-        </div>
-      </div>
-    );
   }
 
   const currentQuestion = session[index];
