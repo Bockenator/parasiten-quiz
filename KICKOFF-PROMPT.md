@@ -12,7 +12,8 @@ Du baust die App „ParaQuiz" — einen deutschsprachigen Parasitologie-Lerntrai
 Lies zuerst diese Dateien im Repo und halte dich strikt daran:
 - CLAUDE.md (verbindliche Kurzreferenz + goldene Regeln)
 - Parasiten-Quiz_Implementation-Plan.md (vollständige Spezifikation)
-- content/source/... bzw. Parasiten.md.md (der Quellinhalt für die Fragen)
+- Parasiten-Katalog.md (Checkliste aller 124 Parasiten — Helminthen/Protozoen/Ektoparasiten — mit Tags/Wichtigkeit)
+- content/source/... (die drei Quelldateien für die Fragen: Helminthen, Protozoen, Ektoparasiten)
 
 Wichtigste Regeln:
 - Alle nutzer-sichtbaren Texte auf Deutsch, Code auf Englisch, UTF-8, <html lang="de">.
@@ -50,7 +51,8 @@ Phase 2 ist die inhaltlich wichtigste. Wenn du dort bist, nutze diesen Zusatz:
 Generiere jetzt content/questions.json aus content/source/parasitologie-quelle.md.
 
 Vorgehen:
-- Gehe die ~49 Parasiten-Monografien der Reihe nach durch.
+- Nutze Parasiten-Katalog.md als verbindliche Abhak-Checkliste: alle 49 Parasiten (Trematoden 4, Zestoden 8, Nematoden 37) müssen abgedeckt sein. Keiner darf fehlen.
+- Gehe die 49 Parasiten-Monografien der Reihe nach durch.
 - Pro Parasit 8–15 Fragen, gemischt über die Fragetypen (nicht nur Multiple Choice). Nutze die Quell-Felder als Vorlagen: Lebenszyklus → ordering; Endwirt/Zwischenwirt → matching; Zoonose JA/NEIN → true_false; Morphologie/Diagnose/Klinik → single_choice/multiple_choice/cloze; Fallbeispiel → case_vignette; Definitionen → flashcard.
 - image_id vorerst weglassen (keine Bilder vorhanden).
 - Tagge jede Frage vollständig (class/subclass/host/topic/flags) und setze importance (1–3) aus der Stern-Wichtigkeit (***/**/*).

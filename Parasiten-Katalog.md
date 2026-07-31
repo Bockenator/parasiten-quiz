@@ -8,7 +8,8 @@ Verteilung: **Trematoden 4 · Zestoden 8 (Taenia = 4) · Nematoden 37.**
 **Protozoen: 32 Parasiten-Einträge**, Quelle `protozoa-quelle.md`.
 Verteilung: **Flagellaten 7 · Kokzidien 14 · Piroplasmen 11.**
 
-**Ektoparasiten:** Quelle `ektoparasiten-quelle.md` — Katalog wird bei der Fragengenerierung ergänzt (Zecken, Milben, Läuse, Fliegen/Mücken, Flöhe).
+**Ektoparasiten: 43 Parasiten-Einträge**, Quelle `ektoparasiten-quelle.md`.
+Verteilung: **Zecken 5 · Milben 12 · Läuse 9 · Sonstige (Wanzen) 1 · Fliegen/Mücken 12 · Flöhe 4.**
 
 Tag-Legende: `class` = Trematoden/Zestoden/Nematoden/Protozoen/Ektoparasiten · `subclass` (Nematoden-, Protozoen- und Ektoparasiten-Untergruppen) · `host` · `flags` (`zoonose`, `meldepflichtig`, `anzeigepflichtig`).
 
@@ -169,7 +170,78 @@ Tag-Legende: `class` = Trematoden/Zestoden/Nematoden/Protozoen/Ektoparasiten · 
 
 ## Ektoparasiten (`ektoparasiten`) — Quelle: `content/source/ektoparasiten-quelle.md`
 
-*(wird im Zuge der Ektoparasiten-Fragengenerierung ergänzt — siehe TOC in der Quelldatei: Zecken, Milben, Läuse, Fliegen/Mücken, Flöhe.)*
+### Untergruppe: Zecken (`zecken`)
+
+| Parasit | ★ | Wirt(e) | Zoonose |
+|---|---|---|---|
+| *Ixodes ricinus* (Holzbock) | ★★★ | Säuger, Vögel, Reptilien | **JA** (Borreliose, FSME) |
+| *Haemaphysalis* spp. | ★ | Wdk., (Pferd) | NEIN |
+| *Rhipicephalus sanguineus* (braune Hundezecke) | ★★ | Hund | **JA** |
+| *Dermacentor* (reticulatus/marginatus) | ★★★ | Hund, Pferd, Rind | NEIN |
+| *Argas reflexus* (Taubenzecke) | ★ | Haustaube | **JA** |
+
+### Untergruppe: Milben (`milben`)
+
+| Parasit | ★ | Wirt(e) | Zoonose |
+|---|---|---|---|
+| *Dermanyssus gallinae* (rote Vogelmilbe) | ★★★ | Geflügel | **JA** |
+| *Ornithonyssus sylviarum/bacoti* | ★★ | Geflügel, Nager | **JA** |
+| *Varroa destructor* | ★★ | Honigbiene | NEIN |
+| *Cheyletiella* (Pelzmilben) | ★★ | Hund, Katze, Kaninchen | **JA** |
+| *Demodex* (Haarbalgmilben) | ★★★ | Säugetiere (wirtsspezifisch) | NEIN |
+| *Trombicula/Neotrombicula autumnalis* | ★ | Nager, Säuger, Vögel | NEIN |
+| *Psoroptes* (ovis/bovis/cuniculi/equi) | ★★★ | Schaf, Rind, Kaninchen, Pferd | NEIN |
+| *Chorioptes* (bovis/texanus) | ★★★ | Rind, Schaf, Pferd | NEIN |
+| *Otodectes cynotis* (Ohrmilbe) | ★★ | Fleischfresser | **JA** |
+| *Sarcoptes scabiei* (var. suis/canis/bovis/equi) | ★★★ | Schwein, Hund, Rind, Pferd | **JA** (var. suis/canis) |
+| *Notoedres cati* (Kopfmilbe) | ★★ | Katze | **JA** |
+| *Knemidocoptes* (mutans/pilae) | ★ | Geflügel, Ziervögel | NEIN |
+
+### Untergruppe: Läuse (`laeuse`)
+
+| Parasit | ★ | Wirt(e) | Zoonose |
+|---|---|---|---|
+| *Bovicola* spp. (bovis/ovis) | ★★★ | Rind, Schaf | NEIN |
+| *Trichodectes canis* | ★★ | Hund | NEIN |
+| *Werneckiella equi equi* | ★★ | Pferd | NEIN |
+| *Felicola subrostratus* | ★ | Katze | NEIN |
+| *Menopon gallinae* | ★★ | Huhn | NEIN |
+| *Menacanthus stramineus* | ★ | Huhn | NEIN |
+| *Linognathus* (vituli/setosus) | ★★ | Rind, Hund | **JA** |
+| *Haematopinus eurysternus* | ★★ | Rind | **JA** |
+| *Haematopinus suis* | ★★ | Schwein | **JA** |
+
+### Sonstige Ektoparasiten (`sonstige_ektoparasiten`)
+
+| Parasit | ★ | Wirt(e) | Zoonose |
+|---|---|---|---|
+| *Cimex lectularius* (Bettwanze) | ★ | Mensch, Vögel | **JA** |
+
+### Untergruppe: Fliegen/Mücken (`fliegen_muecken`)
+
+| Parasit | ★ | Wirt(e) | Zoonose |
+|---|---|---|---|
+| Familie Culicidae (Culex/Aedes/Anopheles) | ★★ | Vögel, Weidetiere, Mensch | **JA** (Malaria) |
+| *Simulium* (Kriebelmücken) | ★★★ | Weidetiere, Mensch | **JA** (Flussblindheit) |
+| *Phlebotomus* (Sandmücken) | ★ | Hund, Mensch | **JA** (Leishmaniose) |
+| *Culicoides* (Gnitzen) | ★★ | Rind, Pferd | NEIN |
+| Familie Tabanidae (Bremsen) | ★★ | Rind, Pferd, Wildwdk. | **JA** |
+| Familie Muscidae (Stall-/Weidefliegen) | ★★ | Rind, Pferd | teils (Belästigung) |
+| Familie Calliphoridae / Sarcophaga (Wundmyiasis) | ★★/★ | Schaf, Kaninchen | NAJA (kein Wirtswechsel) |
+| *Oestrus ovis* (Nasenfliege) | ★★ | Schaf | **JA** |
+| *Gasterophilus intestinalis* (Magenfliege) | ★★★ | Pferd | **JA** |
+| *Hypoderma* (bovis/lineatum, Dasselfliegen) | ★★★ | Weiderind | **JA** |
+| *Hippobosca equi* (Pferdelausfliege) | ★★ | Pferd | **JA** |
+| *Melophagus ovinus* (Schaflausfliege) | ★★ | Schaf | **JA** |
+
+### Untergruppe: Flöhe (`floehe`)
+
+| Parasit | ★ | Wirt(e) | Zoonose |
+|---|---|---|---|
+| *Ctenocephalides* spp. (felis/canis) | ★★★ | Katze, Hund | **JA** (Pest, Katzenkratzkrankheit) |
+| *Ceratophyllus gallinae* (Hühnerfloh) | ★★ | Geflügel | **JA** |
+| *Archaeopsylla erinacei* (Igelfloh) | ★ | Igel, (Hund, Mensch) | — |
+| *Pulex irritans* (Menschenfloh) | ★★ | Mensch, Hund | — |
 
 ---
 

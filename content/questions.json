@@ -18125,5 +18125,3744 @@
     "difficulty": "mittel",
     "explanation": "B. vogeli verläuft meist fast inapparent mit geringgradiger Parasitämie, mildem Fieber und leichter Anämie („milde Form“, keine Jugendresistenz).",
     "source": "Babesia vogeli – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0547",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Zecken (allgemein)",
+    "prompt": "Welche Übertragungsform beschreibt, dass ein Erreger während der Häutung der Zecke über mindestens 2 Stadien persistiert?",
+    "options": [
+      "Transstadiale Übertragung",
+      "Transovarielle Übertragung",
+      "Zyklisch-exkretorische Übertragung",
+      "Stadium-zu-Stadium-Übertragung"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "Bei transstadialer Übertragung persistiert der Erreger während der Entwicklung der Zecke über mindestens 2 Häutungen (z. B. Larve infiziert → Nymphe → Adult überträgt).",
+    "source": "Ordnung Metastigmata (Zecken) – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0548",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Zecken (allgemein)",
+    "prompt": "Wie viele Beinpaare hat eine Zeckenlarve?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "5"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Adulte Zecken und Nymphen haben 4 Beinpaare, Larven dagegen nur 3.",
+    "source": "Unterklasse Acari (Milben, Zecken) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0549",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Zecken (allgemein)",
+    "prompt": "Welches Sinnesorgan nutzen Zecken zur Wirtsfindung (Erkennung von Vibrationen, Temperatur, Luftfeuchtigkeit, Licht)?",
+    "options": [
+      "Hallersches Organ",
+      "Facettenauge",
+      "Tympanalorgan",
+      "Chemorezeptoren am Rüssel"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Das Hallersche Organ dient der Wirtsfindung und -identifizierung über Vibrationen, Temperatur, Luftfeuchtigkeit und Licht.",
+    "source": "Familie Ixodidae (Schildzecken) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0550",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Ixodes ricinus (Holzbock)",
+    "prompt": "Wie lange dauert der Entwicklungszyklus von Ixodes ricinus typischerweise?",
+    "options": [
+      "1–2 Jahre",
+      "2–3 Wochen",
+      "10 Jahre",
+      "3–4 Monate"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Die 3-wirtige Entwicklung von Ixodes ricinus dauert etwa 1–2 Jahre.",
+    "source": "Ixodes ricinus (Holzbock) – Entwicklung"
+  },
+  {
+    "id": "q_0551",
+    "needsReview": false,
+    "image": null,
+    "type": "multiple_choice",
+    "parasite": "Ixodes ricinus (Holzbock)",
+    "prompt": "Welche Erreger werden durch Ixodes ricinus übertragen?",
+    "options": [
+      "Borrelia burgdorferi",
+      "FSME-Virus",
+      "Anaplasma phagocytophilum",
+      "Trichinella spiralis"
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "pferd",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Ixodes ricinus hat eine enorme Vektorkapazität für Borrelia burgdorferi, FSME-Virus und Anaplasma phagocytophilum (sowie Babesia divergens/microti); Trichinella wird nicht durch Zecken übertragen.",
+    "source": "Ixodes ricinus (Holzbock) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0552",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Ixodes ricinus (Holzbock)",
+    "prompt": "Bei welcher Luftfeuchtigkeit ist Ixodes ricinus besonders angepasst zu leben?",
+    "options": [
+      "> 75 %",
+      "< 30 %",
+      "unabhängig von Feuchtigkeit",
+      "50 %"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Ixodes ricinus ist an humide Habitate mit über 75 % Luftfeuchtigkeit angepasst.",
+    "source": "Ixodes ricinus (Holzbock) – Vorkommen, Verbreitung, Epidemiologie"
+  },
+  {
+    "id": "q_0553",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Ixodes ricinus (Holzbock)",
+    "prompt": "Bei der Übertragung von Borrelia burgdorferi durch Ixodes ricinus ist die Umwandlung von OspA zu OspC und die Wanderung in die Speicheldrüse innerhalb weniger Minuten abgeschlossen.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "pferd"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Die Umwandlung und Wanderung in die Speicheldrüse dauert mindestens 24 Stunden — ein schnelles Entfernen der Zecke senkt daher das Infektionsrisiko deutlich.",
+    "source": "Ixodes ricinus (Holzbock) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0554",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Haemaphysalis spp.",
+    "prompt": "Wofür ist Haemaphysalis punctata ein wichtiger Vektor?",
+    "options": [
+      "Babesia major und einige Theileria-Arten",
+      "Borrelia burgdorferi",
+      "Dirofilaria immitis",
+      "Ehrlichia canis"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Haemaphysalis punctata ist Vektor für Babesia major und einige Theileria-Arten.",
+    "source": "Haemaphysalis spp. – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0555",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Rhipicephalus sanguineus (braune Hundezecke)",
+    "prompt": "Was bedeutet es, dass Rhipicephalus sanguineus „endophil“ ist?",
+    "options": [
+      "Angepasst an das Leben in Innenräumen (Zwinger, Wohnungen)",
+      "Nur in freier Natur überlebensfähig",
+      "Ausschließlich im Wasser lebend",
+      "Nur auf Vögeln parasitierend"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Rhipicephalus sanguineus ist endophil, d. h. an das Leben in Innenräumen wie Tierheimen, Zwingern und Wohnungen angepasst, und oft ganzjährig aktiv.",
+    "source": "Rhipicephalus sanguineus (braune Hundezcke) – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0556",
+    "needsReview": false,
+    "image": null,
+    "type": "multiple_choice",
+    "parasite": "Rhipicephalus sanguineus (braune Hundezecke)",
+    "prompt": "Welche Erreger werden durch Rhipicephalus sanguineus übertragen?",
+    "options": [
+      "Ehrlichia canis",
+      "Babesia vogeli",
+      "Hepatozoon canis",
+      "Fasciola hepatica"
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Rhipicephalus sanguineus ist Vektor für Ehrlichia canis, Babesia vogeli und Hepatozoon canis; Fasciola hepatica wird über Schnecken, nicht Zecken übertragen.",
+    "source": "Rhipicephalus sanguineus (braune Hundezcke) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0557",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Rhipicephalus sanguineus (braune Hundezecke)",
+    "prompt": "Wie lange können adulte Rhipicephalus sanguineus ohne Blutmahlzeit hungern?",
+    "options": [
+      "Bis zu 19 Monate",
+      "Nur wenige Stunden",
+      "Bis zu 3 Tage",
+      "Bis zu 9 Jahre"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Adulte Rhipicephalus sanguineus können bis zu 19 Monate hungern.",
+    "source": "Rhipicephalus sanguineus (braune Hundezcke) – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0558",
+    "needsReview": false,
+    "image": null,
+    "type": "matching",
+    "parasite": "Dermacentor",
+    "prompt": "Ordnen Sie die Dermacentor-Art ihrem bevorzugten Habitat zu.",
+    "left": [
+      "Dermacentor reticulatus",
+      "Dermacentor marginatus"
+    ],
+    "right": [
+      "Feuchte Wald- und Wiesenhabitate",
+      "Warme, trockene Habitate"
+    ],
+    "correctPairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "D. reticulatus bevorzugt feuchte Wald- und Wiesenhabitate, D. marginatus warme, trockene Habitate.",
+    "source": "Dermacentor – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0559",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Dermacentor",
+    "prompt": "Für welchen Erreger ist Dermacentor marginatus in Mitteleuropa der wichtigste Vektor?",
+    "options": [
+      "Coxiella burnetii",
+      "Borrelia burgdorferi",
+      "Trypanosoma theileri",
+      "Toxoplasma gondii"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "D. marginatus ist in Mitteleuropa der wichtigste Vektor für Coxiella burnetii, den Erreger des Q-Fiebers.",
+    "source": "Dermacentor – Pathogenese/Pathologie/Immunologie"
+  },
+  {
+    "id": "q_0560",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Dermacentor",
+    "prompt": "Dermacentor reticulatus ist ein Vektor für Babesia canis, Babesia caballi und Theileria equi.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "hund",
+        "pferd"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "D. reticulatus ist Vektor für Babesia caballi, B. canis und Theileria equi.",
+    "source": "Dermacentor – Pathogenese/Pathologie/Immunologie"
+  },
+  {
+    "id": "q_0561",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Argas reflexus (Taubenzecke)",
+    "prompt": "Zu welcher Zeckenfamilie gehört Argas reflexus?",
+    "options": [
+      "Argasidae (Lederzecken)",
+      "Ixodidae (Schildzecken)",
+      "Trombiculidae",
+      "Sarcoptidae"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "gefluegel",
+        "mensch"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "leicht",
+    "explanation": "Argas reflexus ist eine Lederzecke (Argasidae), im Gegensatz zu den Schildzecken (Ixodidae).",
+    "source": "Argas reflexus (Taubenzecke) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0562",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Argas reflexus (Taubenzecke)",
+    "prompt": "Argas reflexus kann als hungernde Adulte bis zu 9 Jahre überleben.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "zecken"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Die Hungerperiode der Adulten kann bis zu 9 Jahre betragen.",
+    "source": "Argas reflexus (Taubenzecke) – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0563",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Dermanyssus gallinae (rote Vogelmilbe)",
+    "prompt": "Wann sind Dermanyssus gallinae vor allem am Wirt aktiv?",
+    "options": [
+      "Nachts",
+      "Tagsüber",
+      "Nur im Winter",
+      "Ganzjährig ununterbrochen am Wirt"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Dermanyssus gallinae ist nachts blutsaugend aktiv und verbirgt sich tagsüber in Schlupfwinkeln (Ecken, Legenester).",
+    "source": "Dermanyssus gallinae (rote Vogelmilbe) – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0564",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Dermanyssus gallinae (rote Vogelmilbe)",
+    "prompt": "Dermanyssus gallinae kann bis zu 9 Monate ohne Blutmahlzeit überleben, was die Bekämpfung erschwert.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Die Lebensdauer nüchtern beträgt 9 Monate, was die Bekämpfung erheblich erschwert.",
+    "source": "Dermanyssus gallinae (rote Vogelmilbe) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0565",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Dermanyssus gallinae (rote Vogelmilbe)",
+    "prompt": "Wodurch unterscheidet sich Dermanyssus gallinae morphologisch von Ornithonyssus sylviarum?",
+    "options": [
+      "Breite Analplatte, Anus in der hinteren Hälfte",
+      "Längsovale Analplatte, Anus vorne",
+      "Fehlende Cheliceren",
+      "8 statt 6 Beine im Adultstadium"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Bei D. gallinae ist die Analplatte breit wie lang mit Anus in der hinteren Hälfte; bei Ornithonyssus ist die Analplatte längsoval mit Anus vorne.",
+    "source": "Dermanyssus gallinae (rote Vogelmilbe) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0566",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Ornithonyssus sylviarum (nordische Vogelmilbe)",
+    "prompt": "Welche Stadien von Ornithonyssus sylviarum sind hämatophag (blutsaugend)?",
+    "options": [
+      "Protonymphe und Adulte",
+      "Nur Larven",
+      "Nur Adulte",
+      "Alle Stadien gleichermaßen"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Nur Protonymphe und Adulte sind hämatophag; Larven und Tritonymphen nehmen keine Nahrung auf.",
+    "source": "Ornithonyssus sylviarum (nordische Vogelmilbe) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0567",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Ornithonyssus bacoti (tropische Rattenmilbe)",
+    "prompt": "Wer ist der Hauptwirt von Ornithonyssus bacoti?",
+    "options": [
+      "Nager",
+      "Geflügel",
+      "Pferd",
+      "Fisch"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Endwirt von Ornithonyssus bacoti sind Nager (gelegentlich auch Carnivore, Vögel, Mensch).",
+    "source": "Ornithonyssus bacoti (tropische Rattenmilbe) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0568",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Varroa destructor",
+    "prompt": "Welchen Wirt befällt Varroa destructor?",
+    "options": [
+      "Die Europäische Honigbiene (Apis mellifera)",
+      "Hühner",
+      "Kaninchen",
+      "Rinder"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "biene"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Varroa destructor ist ein Ektoparasit der Europäischen Honigbiene (Apis mellifera) und gilt als häufigste Bienenerkrankung.",
+    "source": "Varroa destructor – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0569",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Varroa destructor",
+    "prompt": "Wovon ernähren sich adulte weibliche Varroa destructor auf adulten Bienen?",
+    "options": [
+      "Hämolymphe",
+      "Pollen",
+      "Honig",
+      "Wachs"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "biene"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Befruchtete Weibchen ernähren sich von der Hämolymphe adulter Bienen.",
+    "source": "Varroa destructor – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0570",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Varroa destructor",
+    "prompt": "Eine vollständige Tilgung von Varroa destructor in einem befallenen Bienenvolk ist derzeit möglich.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "biene"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Laut Quelle ist eine Tilgung nicht möglich; die Bekämpfung erfolgt symptomatisch mit Antiparasitika nach der Honigernte.",
+    "source": "Varroa destructor – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0571",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Cheyletiella (Pelzmilben)",
+    "prompt": "Wie wird die Cheyletiellose oft treffend beschrieben, weil die Milben Pseudotunnel im Hautdetritus bilden?",
+    "options": [
+      "„Wandernde Schuppen“",
+      "„Rote Kükenruhr“",
+      "„Malteserkreuz“",
+      "„Gelber Knopf“"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund",
+        "katze",
+        "kaninchen"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Cheyletiellen wandern durch Pseudotunnel im epidermalen Detritus, die als „wandernde Schuppen“ bezeichnet werden.",
+    "source": "Cheyletiella (Pelzmilben) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0572",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Cheyletiella (Pelzmilben)",
+    "prompt": "Cheyletiella-Arten sind eine Zoonose; der Mensch gilt dabei als Fehlwirt.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund",
+        "katze",
+        "kaninchen",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Cheyletiella ist eine Zoonose; die Übertragung erfolgt von infizierten Haustieren, der Mensch ist dabei Fehlwirt.",
+    "source": "Cheyletiella (Pelzmilben) – Zoonose"
+  },
+  {
+    "id": "q_0573",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Demodex (Haarbalgmilben)",
+    "prompt": "Wo befinden sich Demodex-Milben typischerweise?",
+    "options": [
+      "In Haarfollikeln (selten Talgdrüsen)",
+      "Im Darmlumen",
+      "In der Lunge",
+      "Im Blut"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund",
+        "wiederkaeuer",
+        "pferd",
+        "schwein"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Demodex-Milben sitzen in Haarfollikeln, seltener in Talgdrüsen, und sind streng wirtsspezifisch.",
+    "source": "Demodex (Haarbalgmilben) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0574",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Demodex (Haarbalgmilben)",
+    "prompt": "Welche Form der Demodikose des Hundes ist die häufigste und heilt meist spontan?",
+    "options": [
+      "Squamöse/lokalisierte Form",
+      "Pustulöse/generalisierte Form",
+      "Otodemodikose",
+      "Chronisch-eitrige Form"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Die squamöse/lokalisierte Form ist am häufigsten, betrifft Junghunde und heilt bei etwa 90 % der Fälle spontan innerhalb 1–2 Monaten.",
+    "source": "Demodex (Haarbalgmilben) – Klinik"
+  },
+  {
+    "id": "q_0575",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Demodex (Haarbalgmilben)",
+    "prompt": "Demodex-Milben sind permanent-stationäre Ektoparasiten mit Überlebenschance abseits des Wirts.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Demodex sind permanent-stationäre Ektoparasiten ohne Überlebenschance abseits vom Wirt; die Übertragung erfolgt postpartal durch Hautkontakt beim Saugakt.",
+    "source": "Demodex (Haarbalgmilben) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0576",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Demodex (Haarbalgmilben)",
+    "prompt": "Welche Behandlung sollte bei Demodikose ausdrücklich vermieden werden, da sie als Belastung wirkt?",
+    "options": [
+      "Cortison-Therapie",
+      "Amitraz-Waschungen",
+      "Scheren der Haare",
+      "Antibiotische Zusatzbehandlung"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "prophylaxe"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Eine Cortison-Therapie gilt als Belastung und sollte vermieden werden.",
+    "source": "Demodex (Haarbalgmilben) – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0577",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Trombicula/Neotrombicula autumnalis (Herbstgrasmilben)",
+    "prompt": "Welches Stadium von Trombicula autumnalis ist parasitisch?",
+    "options": [
+      "Nur die Larve",
+      "Nur Adulte",
+      "Nur Nymphen",
+      "Alle Stadien"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund",
+        "katze",
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Nur die Larve parasitiert; Nymphen und Adulte leben frei im Boden.",
+    "source": "Trombicula/Neotrombicula autumnalis (Herbstgrasmilben) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0578",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Trombicula/Neotrombicula autumnalis (Herbstgrasmilben)",
+    "prompt": "Trombicula autumnalis kann Menschen befallen, gilt dort aber nicht als eigentlicher Krankheitserreger.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Trombicula autumnalis kann Menschen befallen, ist dabei aber kein Krankheitserreger im engeren Sinne.",
+    "source": "Trombicula/Neotrombicula autumnalis (Herbstgrasmilben) – Zoonose"
+  },
+  {
+    "id": "q_0579",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Räudemilben (allgemein)",
+    "prompt": "Worin unterscheiden sich Psoroptidae und Sarcoptidae grundlegend in ihrer Lebensweise auf der Haut?",
+    "options": [
+      "Psoroptidae leben auf der Haut, Sarcoptidae graben Gänge in der Haut",
+      "Psoroptidae leben nur im Blut, Sarcoptidae auf der Haut",
+      "Beide graben gleichermaßen Gänge",
+      "Psoroptidae sind Endoparasiten"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd",
+        "schwein",
+        "hund"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Psoroptidae haben lange Beine und leben auf der Hautoberfläche, während Sarcoptidae (Grabmilben) mit kurzen Beinen Gänge in die Epidermis graben.",
+    "source": "Räudemilben – Übertragung, prädisponierende Faktoren, Schadwirkungen, Leitsymptome"
+  },
+  {
+    "id": "q_0580",
+    "needsReview": false,
+    "image": null,
+    "type": "matching",
+    "parasite": "Psoroptes",
+    "prompt": "Ordnen Sie die Psoroptes-Art ihrem Wirt zu.",
+    "left": [
+      "P. ovis",
+      "P. bovis",
+      "P. cuniculi",
+      "P. equi"
+    ],
+    "right": [
+      "Schaf",
+      "Rind",
+      "Kaninchen (Ziege)",
+      "Pferd"
+    ],
+    "correctPairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd",
+        "kaninchen"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Psoroptes-Arten sind relativ wirtsspezifisch: P. ovis (Schaf), P. bovis (Rind), P. cuniculi (Kaninchen/Ziege), P. equi (Pferd).",
+    "source": "Psoroptes – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0581",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Psoroptes",
+    "prompt": "Wo sitzt Psoroptes cuniculi bevorzugt und welche Räudeform verursacht die Art?",
+    "options": [
+      "Ohr → Ohrräude",
+      "Rücken → Körperräude",
+      "Fesselbeuge → Fußräude",
+      "Kopf → Kopfräude"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "kaninchen"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "P. cuniculi sitzt im Ohr und verursacht die Ohrräude — die bedeutendste Ektoparasitose des Kaninchens.",
+    "source": "Psoroptes – Entwicklung"
+  },
+  {
+    "id": "q_0582",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Psoroptes",
+    "prompt": "Psoroptes-Räude beim Schaf ist hochkontagiös und kann sich rasch bis epidemisch ausbreiten.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Hohe Kontagiosität, vor allem bei Schafen, führt zu rascher bis epidemischer Ausbreitung der Psoroptes-Räude.",
+    "source": "Psoroptes – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0583",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Chorioptes (Nagemilben)",
+    "prompt": "Wodurch unterscheiden sich Chorioptes-Milben in ihrer Nahrungsaufnahme von Sarcoptes-Milben?",
+    "options": [
+      "Sie ernähren sich von Epidermis, ohne in die Haut einzudringen",
+      "Sie graben tiefe Gänge wie Sarcoptes",
+      "Sie saugen Blut",
+      "Sie ernähren sich ausschließlich von Talg"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Chorioptes-Milben (kauende Mundwerkzeuge, „Nagemilben“) ernähren sich von der Epidermis, ohne in die Haut einzudringen — anders als die grabenden Sarcoptes-Milben.",
+    "source": "Chorioptes (Nagemilben) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0584",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Chorioptes (Nagemilben)",
+    "prompt": "Welche Räudeform verursacht Chorioptes bovis beim Rind an Schwanzansatz, Fesselbeuge, Euter und Skrotum?",
+    "options": [
+      "Steiß-/Schwanzräude",
+      "Kopfräude",
+      "Ohrräude",
+      "Körperräude"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Beim Rind verursacht Chorioptes bovis die Steiß-/Schwanzräude.",
+    "source": "Chorioptes (Nagemilben) – Entwicklung"
+  },
+  {
+    "id": "q_0585",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Chorioptes (Nagemilben)",
+    "prompt": "Systemische (parenterale) Behandlungen gegen Chorioptes-Räude sind meist erfolgreich, da die Milben Blut aufnehmen.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Systemische Behandlungen sind meist erfolglos, da sich die Milben von Epidermis ernähren, nicht von Blut — daher ist eine lokale Behandlung mit Akariziden notwendig.",
+    "source": "Chorioptes (Nagemilben) – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0586",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Otodectes cynotis (Ohrmilbe)",
+    "prompt": "Welcher Anteil der Otitiden bei Katzen wird durch Otodectes cynotis verursacht?",
+    "options": [
+      "Etwa die Hälfte",
+      "Fast keine",
+      "Praktisch alle",
+      "Ein Viertel"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "katze"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Otodectes cynotis ist die häufigste Räudemilbe bei Fleischfressern; etwa die Hälfte der Otitiden bei Katzen wird durch sie verursacht.",
+    "source": "Otodectes cynotis (Ohrmilbe) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0587",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Otodectes cynotis (Ohrmilbe)",
+    "prompt": "Wie wird Otodectes cynotis diagnostisch häufig nachgewiesen?",
+    "options": [
+      "Otoskopie",
+      "Röntgen",
+      "Blutausstrich",
+      "ELISA im Serum"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "diagnose"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Der Nachweis erfolgt per Otoskop; bereits der Nachweis einer einzigen Milbe reicht diagnostisch aus.",
+    "source": "Otodectes cynotis (Ohrmilbe) – Diagnose"
+  },
+  {
+    "id": "q_0588",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Sarcoptes scabiei var. suis (Grabmilben)",
+    "prompt": "Wie tief graben Sarcoptes-Weibchen täglich maximal in die Epidermis?",
+    "options": [
+      "5 mm/Tag",
+      "1 mm/Tag",
+      "5 cm/Tag",
+      "50 cm/Tag"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "schwein"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Weibchen graben bis zu 1 cm lange Gänge mit maximal 5 mm Zuwachs pro Tag.",
+    "source": "Sarcoptes scabiei var. suis (Grabmilben) – Entwicklung"
+  },
+  {
+    "id": "q_0589",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Sarcoptes scabiei var. suis (Grabmilben)",
+    "prompt": "Welche Immunreaktionstypen dominieren die hyperergische Phase der Sarcoptes-Räude?",
+    "options": [
+      "Erst Typ IV, dann Typ I",
+      "Nur Typ II",
+      "Nur Typ III",
+      "Keine Immunreaktion beteiligt"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "schwein"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "In der hyperergischen Phase (Dauer 4–5 Monate) dominiert zunächst eine Typ-IV-, dann eine Typ-I-Allergische Reaktion.",
+    "source": "Sarcoptes scabiei var. suis (Grabmilben) – Pathogenese/Pathologie/Immunologie"
+  },
+  {
+    "id": "q_0590",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Sarcoptes scabiei var. suis (Grabmilben)",
+    "prompt": "Wie wird der indirekte Milbennachweis beim Schwein anhand von Verhaltensbeobachtung genannt?",
+    "options": [
+      "Kratz-Index",
+      "Juckreiz-Score",
+      "Scheuer-Test",
+      "Hautreflex-Test"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "schwein"
+      ],
+      "topic": [
+        "diagnose"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Der Kratz-Index zählt Scheuerbewegungen von 20 Tieren über 15 Minuten; < 0,4 gilt als unwahrscheinlich, > 1,5 als Verdacht.",
+    "source": "Sarcoptes scabiei var. suis (Grabmilben) – Diagnose"
+  },
+  {
+    "id": "q_0591",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Sarcoptes scabiei var. suis (Grabmilben)",
+    "prompt": "Sarcoptes scabiei var. hominis (Erreger der Krätze beim Menschen) ist eine Zoonose vom Tier auf den Menschen.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Sarcoptes scabiei var. hominis wird von Mensch zu Mensch übertragen (Scabies/Krätze) und ist keine Zoonose; Varianten vom Tier können den Menschen zwar befallen (Pseudoscabies mit Juckreiz), vermehren sich dort aber i. d. R. nicht.",
+    "source": "Sarcoptes scabiei var. suis (Grabmilben) – Zoonose"
+  },
+  {
+    "id": "q_0592",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Sarcoptes scabiei var. canis (Grabmilben)",
+    "prompt": "An welchen Körperstellen beginnt die Sarcoptes-Räude beim Hund typischerweise?",
+    "options": [
+      "Ohrrand, Kopf",
+      "Rücken",
+      "Schwanzansatz",
+      "Bauch"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Bei Hunden (v. a. Welpen und Junghunden) beginnt der Befall am Ohrrand und Kopf, mit Ausbreitungstendenz auf Brust, Abdomen und Beine; der Rücken bleibt meist frei.",
+    "source": "Sarcoptes scabiei var. canis (Grabmilben) – Klinik"
+  },
+  {
+    "id": "q_0593",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Notoedres cati (Kopfmilbe)",
+    "prompt": "Welcher Wirt ist bei Notoedres cati betroffen?",
+    "options": [
+      "Katze",
+      "Hund",
+      "Schwein",
+      "Rind"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "katze"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Notoedres cati (Kopfmilbe) befällt ausschließlich die Katze und ist in Nord- und Mitteleuropa selten (< 2 %).",
+    "source": "Notoedres cati (Kopfmilbe) – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0594",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Notoedres cati (Kopfmilbe)",
+    "prompt": "Notoedres cati ist eine Zoonose.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "katze",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Notoedres cati ist als Zoonose eingestuft.",
+    "source": "Notoedres cati (Kopfmilbe) – Zoonose"
+  },
+  {
+    "id": "q_0595",
+    "needsReview": false,
+    "image": null,
+    "type": "matching",
+    "parasite": "Knemidocoptes (Vogelmilben)",
+    "prompt": "Ordnen Sie die Knemidocoptes-Art ihrer verursachten Räudeform zu.",
+    "left": [
+      "Knemidocoptes mutans",
+      "Knemidocoptes pilae"
+    ],
+    "right": [
+      "Kalkbeinräude",
+      "Schnabelräude"
+    ],
+    "correctPairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "K. mutans verursacht die Kalkbeinräude (Haushuhn, Pute u. a.), K. pilae die Schnabelräude (Papageien, Wellensittiche).",
+    "source": "Knemidocoptes (Vogelmilben) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0596",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Knemidocoptes (Vogelmilben)",
+    "prompt": "Ivermectin darf bei Wellensittichen mit Knemidocoptes-Befall problemlos per Injektion verabreicht werden.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "milben"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "schwer",
+    "explanation": "Bei Wellensittichen ist eine Ivermectin-Injektion tödlich; es wird ausschließlich als Spot-On angewendet.",
+    "source": "Knemidocoptes (Vogelmilben) – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0597",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Haarlinge und Federlinge (Mallophaga, allgemein)",
+    "prompt": "Wovon ernähren sich Haarlinge (Mallophaga) hauptsächlich?",
+    "options": [
+      "Hautschuppen, Lipide, Bakterien",
+      "Blut",
+      "Nektar",
+      "Kot anderer Insekten"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "hund",
+        "katze",
+        "pferd",
+        "gefluegel"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Haarlinge ernähren sich von Hautschuppen, Lipiden und Bakterien; Federlinge zusätzlich von Federteilen.",
+    "source": "Ordnung Mallophaga (Haarlinge und Federlinge) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0598",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Haarlinge und Federlinge (Mallophaga, allgemein)",
+    "prompt": "Haarlinge sind sehr wirtsspezifisch, werden aber durch engen Kontakt zwischen Wirten übertragen.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Die Übertragung erfolgt durch engen Kontakt der Wirte, ist aber sehr wirtsspezifisch.",
+    "source": "Ordnung Mallophaga (Haarlinge und Federlinge) – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0599",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Haarlinge und Federlinge (Mallophaga, allgemein)",
+    "prompt": "Wofür können Haarlinge bei Fleischfressern als Zwischenwirt dienen?",
+    "options": [
+      "Dipylidium caninum",
+      "Toxocara canis",
+      "Echinococcus granulosus",
+      "Trichinella spiralis"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Haarlinge von Fleischfressern können als Zwischenwirte von Dipylidium caninum fungieren.",
+    "source": "Ordnung Mallophaga (Haarlinge und Federlinge) – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0600",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Bovicola spp.",
+    "prompt": "Wie hoch ist die Prävalenz von Bovicola bovis in deutschen Rinderbeständen laut Quelle?",
+    "options": [
+      "39 %",
+      "4 %",
+      "90 %",
+      "unter 1 %"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Bovicola bovis kommt in 39 % der Rinderbestände in Deutschland vor und ist damit häufig.",
+    "source": "Bovicola spp. – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0601",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Bovicola spp.",
+    "prompt": "Wann ist die Bovicola-Aktivität am höchsten?",
+    "options": [
+      "Winter, Frühjahr",
+      "Sommer",
+      "Nur im Herbst",
+      "Ganzjährig konstant"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Die saisonale Aktivität ist im Winter und Frühjahr am höchsten.",
+    "source": "Bovicola spp. – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0602",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Trichodectes canis (Hunde-Haarling)",
+    "prompt": "Wofür kann Trichodectes canis als Zwischenwirt dienen?",
+    "options": [
+      "Dipylidium caninum",
+      "Toxascaris leonina",
+      "Ancylostoma caninum",
+      "Babesia canis"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Trichodectes canis kann Zwischenwirt für Dipylidium caninum sein.",
+    "source": "Trichodectes canis (Hunde-Haarling) – Diagnose"
+  },
+  {
+    "id": "q_0603",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Werneckiella equi equi (Pferdehaarling)",
+    "prompt": "Welcher Wirt wird von Werneckiella equi equi befallen?",
+    "options": [
+      "Pferd",
+      "Rind",
+      "Schaf",
+      "Hund"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Werneckiella equi equi ist der Pferdehaarling und weltweit verbreitet, in Deutschland aber selten.",
+    "source": "Werneckiella equi equi (Pferdehaarling) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0604",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Felicola subrostratus (Katzenhaarling)",
+    "prompt": "Woran lässt sich Felicola subrostratus morphologisch charakteristisch erkennen?",
+    "options": [
+      "Charakteristische Einkerbungen am Vorderrand des Kopfes",
+      "Auffällig lange Schleppgeißel",
+      "Malteserkreuz-Anordnung im Blutausstrich",
+      "Große Facettenaugen"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "katze"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "schwer",
+    "explanation": "Felicola subrostratus zeigt charakteristische Einkerbungen am Vorderrand des Kopfes.",
+    "source": "Felicola subrostratus (Katzenhaarling) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0605",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Menopon gallinae (Hühnerfederling)",
+    "prompt": "Wo sitzen Federlinge wie Menopon gallinae am Wirt?",
+    "options": [
+      "Im Gefieder",
+      "Im äußeren Gehörgang",
+      "Unter der Haut",
+      "Im Darm"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Federlinge wie Menopon gallinae sitzen im Gefieder und ernähren sich von Hautschuppen, Lipiden, Bakterien und Federteilen.",
+    "source": "Menopon gallinae (Hühnerfederling) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0606",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Menacanthus stramineus (Yellow Body Louse)",
+    "prompt": "Welche Körperregion befällt Menacanthus stramineus (bzw. Eomenacanthus stramineus) bevorzugt beim Huhn?",
+    "options": [
+      "Brust-, Rücken- und Kloakenbereich",
+      "Nur den Kopf",
+      "Nur die Flügel",
+      "Die Füße"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Der Befall betrifft vor allem Brust-, Rücken- und Kloakenbereich.",
+    "source": "Menacanthus stramineus (Yellow Body Louse) – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0607",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Läuse (Anoplura, allgemein)",
+    "prompt": "Läuse der Ordnung Anoplura sind Blutsauger und besitzen stechend-saugende Mundwerkzeuge.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "hund",
+        "schwein"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Anoplura sind obligate Blutsauger mit stechend-saugenden Mundwerkzeugen, flügellos und permanent stationär.",
+    "source": "Ordnung Anoplura (Läuse) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0608",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Linognathus",
+    "prompt": "Welcher Wirt wird von Linognathus vituli (langnasige Rinderlaus) bevorzugt befallen?",
+    "options": [
+      "Kälber",
+      "Adulte Bullen",
+      "Kühe im letzten Trächtigkeitsdrittel",
+      "Ausschließlich Ochsen"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Linognathus vituli befällt vor allem Kälber.",
+    "source": "Linognathus – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0609",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Linognathus",
+    "prompt": "Welche Linognathus-Art befällt den Hund?",
+    "options": [
+      "Linognathus setosus",
+      "Linognathus vituli",
+      "Linognathus ovillus",
+      "Linognathus stenopsis"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Linognathus setosus befällt den Hund (Läuse beim Hund sind in Mitteleuropa allerdings selten).",
+    "source": "Linognathus – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0610",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Haematopinus eurysternus (kurznasige Rinderlaus)",
+    "prompt": "An welcher Körperregion sitzt Haematopinus eurysternus bevorzugt beim Rind?",
+    "options": [
+      "Kopf, Rücken bis Schwanzansatz",
+      "Nur die Klauen",
+      "Nur das Euter",
+      "Nur die Ohren"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Der Sitz ist vorwiegend an Kopf, Rücken bis Schwanzansatz.",
+    "source": "Haematopinus eurysternus (kurznasige Rinderlaus) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0611",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Haematopinus suis (Schweinelaus)",
+    "prompt": "Wie groß ist Haematopinus suis im Vergleich zu anderen Läusearten in der Quelle?",
+    "options": [
+      "4–6 mm, die größte genannte Läuseart",
+      "1–2 mm, die kleinste Art",
+      "10 mm",
+      "unter 1 mm"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "schwein"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Haematopinus suis ist mit 4–6 mm die größte in der Quelle genannte Läuseart.",
+    "source": "Haematopinus suis (Schweinelaus) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0612",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Haematopinus suis (Schweinelaus)",
+    "prompt": "Läuse gelten allgemein als Ansteckungsquelle für den Menschen (Zoonose laut Quelle).",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "laeuse"
+      ],
+      "host": [
+        "schwein",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die Quelle stuft Läuse allgemein als Zoonose ein — die Tiere gelten als Ansteckungsquelle für Menschen.",
+    "source": "Haematopinus suis (Schweinelaus) – Zoonose"
+  },
+  {
+    "id": "q_0613",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Cimex lectularius (Bettwanze)",
+    "prompt": "Wie lange kann eine hungernde Bettwanze überleben?",
+    "options": [
+      "Über 1 Jahr",
+      "Nur wenige Stunden",
+      "Maximal 1 Woche",
+      "3 Tage"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "sonstige_ektoparasiten"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Die Hungerperiode von Cimex lectularius kann über 1 Jahr betragen.",
+    "source": "Cimex lectularius (Bettwanze) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0614",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Cimex lectularius (Bettwanze)",
+    "prompt": "Cimex lectularius selbst ist der Überträger der Chagas-Krankheit (Trypanosoma cruzi).",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "sonstige_ektoparasiten"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Nicht Cimex, sondern Raubwanzen (Triatominae) übertragen die Chagas-Krankheit; Cimex selbst ist trotzdem als Wirt-Zoonose-Erreger eingestuft (Stichreaktionen beim Menschen).",
+    "source": "Cimex lectularius (Bettwanze) – Zoonose"
+  },
+  {
+    "id": "q_0615",
+    "needsReview": false,
+    "image": null,
+    "type": "matching",
+    "parasite": "Familie Culicidae (Stechmücken)",
+    "prompt": "Ordnen Sie die Stechmückengattung ihrer Eiablage-Umgebung zu.",
+    "left": [
+      "Culex",
+      "Anopheles",
+      "Aedes"
+    ],
+    "right": [
+      "Stehende Gewässer (z. B. Regentonne)",
+      "Freie, sonnige Dauergewässer",
+      "Oberhalb der Wasserlinie in Überschwemmungsgebieten"
+    ],
+    "correctPairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "mensch"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "Culex legt Eier in stehende Gewässer, Anopheles in freie, sonnige Dauergewässer, Aedes oberhalb der Wasserlinie in Überschwemmungsgebieten.",
+    "source": "Familie Culicidae (Stechmücken) – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0616",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Familie Culicidae (Stechmücken)",
+    "prompt": "Welche Mückengattung überträgt beim Menschen Malariaerreger (Plasmodium spp.)?",
+    "options": [
+      "Anopheles",
+      "Culex",
+      "Aedes",
+      "Culicoides"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Anopheles ist Überträger von Malariaerregern (Plasmodium vivax, P. malariae).",
+    "source": "Familie Culicidae (Stechmücken) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0617",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Familie Culicidae (Stechmücken)",
+    "prompt": "Culex, Aedes und Anopheles können alle Filarien wie Dirofilaria immitis und D. repens übertragen.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Alle drei Gattungen übertragen Filarien, darunter Dirofilaria immitis und D. repens.",
+    "source": "Familie Culicidae (Stechmücken) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0618",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Simulium (Kriebelmücken)",
+    "prompt": "Wie viele Kriebelmücken können laut Quelle ein Rind durch Simuliotoxikose töten?",
+    "options": [
+      "Etwa 10.000",
+      "Etwa 100",
+      "Etwa 1 Million",
+      "Eine einzige"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "Etwa 10.000 Kriebelmücken können durch ihre gefäßschädigenden Speicheltoxine ein Rind töten.",
+    "source": "Simulium (Kriebelmücken) – Pathogenese/Pathologie"
+  },
+  {
+    "id": "q_0619",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Simulium (Kriebelmücken)",
+    "prompt": "Welche Erkrankung des Pferdes wird mit Kriebelmückenstichen in Verbindung gebracht?",
+    "options": [
+      "Sommerekzem",
+      "Weiderot",
+      "Beschälseuche",
+      "Dasselbeule"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Beim Pferd wird das Sommerekzem mit hohen IgE-Spiegeln gegen Speichelprotein von Kriebelmücken assoziiert.",
+    "source": "Simulium (Kriebelmücken) – Klinik"
+  },
+  {
+    "id": "q_0620",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Simulium (Kriebelmücken)",
+    "prompt": "Kriebelmücken können beim Menschen als Vektor von Onchocerca volvulus, dem Erreger der Flussblindheit, fungieren.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Kriebelmückenstiche können Onchocerca volvulus (Flussblindheit) übertragen.",
+    "source": "Simulium (Kriebelmücken) – Zoonose"
+  },
+  {
+    "id": "q_0621",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Phlebotomus (Sandmücken)",
+    "prompt": "Für welchen Erreger ist Phlebotomus der wichtigste Vektor beim Hund?",
+    "options": [
+      "Leishmania infantum",
+      "Babesia canis",
+      "Dirofilaria immitis",
+      "Ehrlichia canis"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 1,
+    "difficulty": "leicht",
+    "explanation": "Phlebotomus-Sandmücken sind Vektor von Leishmania infantum, mit dem Hund als geeignetem Reservoir.",
+    "source": "Phlebotomus (Sandmücken) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0622",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Phlebotomus (Sandmücken)",
+    "prompt": "Sandmücken sind ausschließlich nachtaktiv und stechen niemals tagsüber.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "hund"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "mittel",
+    "explanation": "Phlebotomus-Arten sind vorwiegend nachtaktive Freilandmücken, können aber auch tagsüber stechen.",
+    "source": "Phlebotomus (Sandmücken) – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0623",
+    "needsReview": false,
+    "image": null,
+    "type": "multiple_choice",
+    "parasite": "Culicoides (Gnitzen)",
+    "prompt": "Welche Viruserkrankungen werden durch Culicoides (Gnitzen) übertragen?",
+    "options": [
+      "Blauzungenkrankheit",
+      "Schmallenberg-Virus",
+      "Afrikanische Pferdepest",
+      "Tollwut"
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Culicoides übertragen u. a. Blauzungenkrankheit und Schmallenberg-Virus beim Rind sowie die Afrikanische Pferdepest; Tollwut wird nicht durch Insekten übertragen.",
+    "source": "Culicoides (Gnitzen) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0624",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Culicoides (Gnitzen)",
+    "prompt": "Welche allergische Hauterkrankung des Pferdes wird durch Culicoides-Speichel (Typ-I-Reaktion) ausgelöst?",
+    "options": [
+      "Sommerekzem",
+      "Notoedres-Räude",
+      "Chorioptes-Räude",
+      "FAD (Floh-Allergie-Dermatitis)"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Das Sommerekzem beim Pferd (auch Wiederkäuer) ist eine allergische Sofort-Typ-I-Reaktion auf Culicoides-Speichel.",
+    "source": "Culicoides (Gnitzen) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0625",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Familie Tabanidae (Bremsen)",
+    "prompt": "Welche Übertragungsform beschreibt, dass eine Bremse Blut von einem gestörten Wirt direkt auf einen anderen überträgt (ohne Erregerentwicklung im Vektor)?",
+    "options": [
+      "Azyklische Übertragung",
+      "Zyklische Übertragung",
+      "Transovarielle Übertragung",
+      "Transstadiale Übertragung"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "Bei der azyklischen Übertragung wird infiziertes Blut mechanisch von einem Wirt auf den nächsten übertragen (z. B. Trypanosoma evansi).",
+    "source": "Familie Tabanidae (Bremsen) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0626",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Familie Tabanidae (Bremsen)",
+    "prompt": "Welches Geschlecht der Bremsen ist blutsaugend?",
+    "options": [
+      "Nur die Weibchen",
+      "Nur die Männchen",
+      "Beide Geschlechter gleichermaßen",
+      "Keines, beide ernähren sich nur von Nektar"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Nur die Weibchen nehmen nach der Begattung eine Blutmahlzeit für die Eiproduktion auf; beide Geschlechter ernähren sich sonst von kohlenhydrathaltigen Säften.",
+    "source": "Familie Tabanidae (Bremsen) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0627",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Familie Tabanidae (Bremsen)",
+    "prompt": "Welcher Erreger wird über Bremsen beim Rind zyklisch (mit Erregerentwicklung im Vektor) übertragen?",
+    "options": [
+      "Trypanosoma theileri",
+      "Trypanosoma evansi",
+      "Anaplasma marginale",
+      "Infektiöse-Anämie-Virus der Pferde"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "Trypanosoma theileri wird beim Rind zyklisch über Bremsen übertragen, während die übrigen genannten Erreger azyklisch (mechanisch) übertragen werden.",
+    "source": "Familie Tabanidae (Bremsen) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0628",
+    "needsReview": false,
+    "image": null,
+    "type": "matching",
+    "parasite": "Familie Muscidae",
+    "prompt": "Ordnen Sie die Fliegenart ihrer bevorzugten Körperregion am Wirt zu.",
+    "left": [
+      "Musca autumnalis (Gesichtsfliege)",
+      "Hydrotaea irritans (Kopf-/Euterfliege)",
+      "Haematobia irritans (kleine Weidestechfliege)"
+    ],
+    "right": [
+      "Kopf",
+      "Kopf, Unterbauch, Zitzen",
+      "Rücken, Hornbasis"
+    ],
+    "correctPairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "M. autumnalis sitzt am Kopf, Hydrotaea an Kopf/Unterbauch/Zitzen, H. irritans an Rücken und Hornbasis.",
+    "source": "Familie Muscidae – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0629",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Familie Muscidae",
+    "prompt": "Wofür kann Musca autumnalis als Vektor fungieren (Augenerkrankung des Rindes)?",
+    "options": [
+      "Moraxella bovis (infektiöse Keratokonjunktivitis)",
+      "Coxiella burnetii",
+      "Babesia divergens",
+      "Trichinella spiralis"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Musca autumnalis ist Vektor von Moraxella bovis, dem Erreger der infektiösen Keratokonjunktivitis des Rindes.",
+    "source": "Familie Muscidae – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0630",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Familie Muscidae",
+    "prompt": "Ab welcher Fliegendichte wird bei Stall- und Hausfliegen von einer Belästigungsschwelle mit Leistungseinbußen gesprochen?",
+    "options": [
+      "Ca. 20 Fliegen pro Tier",
+      "Ca. 2 Fliegen pro Tier",
+      "Ca. 200 Fliegen pro Tier",
+      "Es gibt keine definierte Schwelle"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer",
+        "pferd"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "schwer",
+    "explanation": "Die Belästigungsschwelle liegt laut Quelle bei etwa 20 Fliegen pro Tier.",
+    "source": "Familie Muscidae – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0631",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Familie Muscidae",
+    "prompt": "Welche Larvizide werden gegen Fliegenlarven im Stall eingesetzt (Chitinsynthesehemmer)?",
+    "options": [
+      "Cyromazin oder Methopren",
+      "Ivermectin",
+      "Praziquantel",
+      "Fenbendazol"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Cyromazin und Methopren wirken als Chitinsynthesehemmer larvizid.",
+    "source": "Familie Muscidae – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0632",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Familie Calliphoridae (Schmeiß- und Goldfliegen)",
+    "prompt": "Wovon ernähren sich die Larven von Lucilia sericata bei der Wundmyiasis des Schafs?",
+    "options": [
+      "Epidermis, Proteine, Wundexsudat, nekrotisierendes Gewebe",
+      "Ausschließlich Blut",
+      "Wolle",
+      "Kot des Wirtstiers"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "pathogenese"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die Larven ernähren sich von Epidermis, Proteinen, Wundexsudat und nekrotisierendem Gewebe — daher die fakultativ parasitäre Wundmyiasis.",
+    "source": "Familie Calliphoridae (Schmeiß- und Goldfliegen) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0633",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Familie Calliphoridae (Schmeiß- und Goldfliegen)",
+    "prompt": "Schafrassen mit stark gefalteten Hautpartien (z. B. Merino) sind für Wundmyiasis prädisponiert.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Schafrassen mit gefalteten Hautpartien wie Merino sind prädisponiert, da verschmutzte, feuchte Körperstellen zur Eiablage einladen.",
+    "source": "Familie Calliphoridae (Schmeiß- und Goldfliegen) – Immunologie"
+  },
+  {
+    "id": "q_0634",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Sarcophaga (Fleischfliegen)",
+    "prompt": "Wodurch unterscheidet sich der Larvenabsatz von Wohlfahrtia magnifica von dem der Calliphoridae?",
+    "options": [
+      "Larvipar/vivipar — direkte Ablage lebender Larven ins Gewebe",
+      "Eiablage wie bei Calliphoridae",
+      "Keine Vermehrung am Wirt möglich",
+      "Nur Eiablage im Wasser"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "schwer",
+    "explanation": "Wohlfahrtia magnifica ist larvipar/vivipar: Die Weibchen legen lebende Larven direkt in lebendes Gewebe ab (Urogenital-, Analregion, Wunden), statt Eier abzulegen.",
+    "source": "Sarcophaga (Fleischfliegen) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0635",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Oestrus ovis (Nasenfliege, Schafbremse)",
+    "prompt": "Wie infiziert das Weibchen von Oestrus ovis das Schaf?",
+    "options": [
+      "Es spritzt lebende L1-Larven in die Nasenöffnung",
+      "Es legt Eier auf die Haut",
+      "Es sticht und überträgt Larven mit dem Speichel",
+      "Über kontaminiertes Futter"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Das Weibchen entwickelt Eier zu L1 im eigenen Körper und spritzt die L1-Larven direkt in die Nasenöffnung des Schafs.",
+    "source": "Oestrus ovis (Nasenfliege, Schafbremse) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0636",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Oestrus ovis (Nasenfliege, Schafbremse)",
+    "prompt": "Oestrus ovis kann beim Menschen als Fehlwirt eine pharyngeale oder konjunktivale Myiasis verursachen.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Beim Menschen als Fehlwirt kann Oestrus ovis eine pharyngeale oder konjunktivale Myiasis auslösen.",
+    "source": "Oestrus ovis (Nasenfliege, Schafbremse) – Zoonose"
+  },
+  {
+    "id": "q_0637",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Gasterophilus intestinalis (Magenfliege)",
+    "prompt": "Wo legt Gasterophilus intestinalis ihre Eier ab?",
+    "options": [
+      "In den Haaren des Pferdes (Vorderbeine)",
+      "Im Magen direkt",
+      "Im Kot",
+      "Im Wasser"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Die Eiablage erfolgt in den Haaren des Pferdes, artspezifisch an den Vorderbeinen bei G. intestinalis.",
+    "source": "Gasterophilus intestinalis (Magenfliege) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0638",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Gasterophilus intestinalis (Magenfliege)",
+    "prompt": "Wo siedeln sich die L3-Larven von Gasterophilus intestinalis im Verdauungstrakt an?",
+    "options": [
+      "Magen",
+      "Dünndarm",
+      "Dickdarm",
+      "Ösophagus"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Die L3-Larven von G. intestinalis siedeln sich im Magen an (G. nasalis dagegen im Dünndarm).",
+    "source": "Gasterophilus intestinalis (Magenfliege) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0639",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Hypoderma",
+    "prompt": "Wie wird die entzündliche Struktur mit Atemloch genannt, die Hypoderma-Larven in der Rückenhaut des Rindes bilden?",
+    "options": [
+      "Dasselbeule",
+      "Wundmyiasis-Knoten",
+      "Granulom",
+      "Zeckengranulom"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Die Larven bilden in der Rückenunterhaut eine bindegewebig abgekapselte Entzündung mit Fistel (Atemloch) nach außen — die Dasselbeule.",
+    "source": "Hypoderma – Pathogenese/Pathologie/Klinik"
+  },
+  {
+    "id": "q_0640",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Hypoderma",
+    "prompt": "Eine systemische Behandlung gegen Hypoderma-Larven ist von Dezember bis Mitte März kontraindiziert.",
+    "answer": true,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "In diesem Zeitraum befinden sich die Larven im Wirbelkanal; absterbende Larven könnten das Rückenmark schädigen.",
+    "source": "Hypoderma – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0641",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Hypoderma",
+    "prompt": "Wodurch unterscheidet sich die Körperwanderung von Hypoderma lineatum von der von H. bovis?",
+    "options": [
+      "H. lineatum wandert über den Ösophagus, H. bovis über den Wirbelkanal",
+      "Beide wandern identisch",
+      "H. lineatum wandert nie in den Körper",
+      "H. bovis wandert über den Ösophagus, H. lineatum über den Wirbelkanal"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "schwer",
+    "explanation": "H. lineatum wandert von der Haut zum Ösophagus (Ruhephase), H. bovis über große Nervenstränge in den Wirbelkanal (epidurales Fettgewebe).",
+    "source": "Hypoderma – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0642",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Hippobosca equi (Pferdelausfliege)",
+    "prompt": "An welchen Prädilektionsstellen sticht Hippobosca equi bevorzugt?",
+    "options": [
+      "Inguinal- und Schenkelfalten",
+      "Nur die Ohren",
+      "Nur das Euter",
+      "Der Rücken"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "pferd"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die Stiche erfolgen bevorzugt an Inguinal- und Schenkelfalten.",
+    "source": "Hippobosca equi (Pferdelausfliege) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0643",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Melophagus ovinus (Schaflausfliege)",
+    "prompt": "Wo verbringt Melophagus ovinus den Großteil ihres Lebens?",
+    "options": [
+      "Dauerhaft auf dem Wirt, im Vlies",
+      "Nur nachts am Wirt",
+      "Im Wasser",
+      "Im Boden"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "fliegen_muecken"
+      ],
+      "host": [
+        "wiederkaeuer"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Melophagus ovinus lebt dauerhaft auf dem Wirt im Vlies (Lebensdauer ca. 4 Monate), anders als viele andere Fliegenarten.",
+    "source": "Melophagus ovinus (Schaflausfliege) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0644",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Flöhe (Siphonaptera, allgemein)",
+    "prompt": "Wo befindet sich der Großteil (ca. 95 %) einer Flohpopulation zu jedem Zeitpunkt?",
+    "options": [
+      "In der Umgebung (nicht am Wirt)",
+      "Auf dem Wirt",
+      "Im Boden als Ei",
+      "Im Wasser"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Flöhe sind periodische Ektoparasiten: etwa 95 % der Flohpopulation befinden sich zu jedem Zeitpunkt in der Umgebung, nicht am Wirt.",
+    "source": "Ordnung Siphonaptera (Flöhe) – Vorkommen, Verbreitung, Epidemiologie"
+  },
+  {
+    "id": "q_0645",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Flöhe (Siphonaptera, allgemein)",
+    "prompt": "Wovon ernähren sich Flohlarven (L1–L3)?",
+    "options": [
+      "Flohkot, Tierkot, Floheier",
+      "Blut direkt am Wirt",
+      "Nektar",
+      "Wolle"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Flohlarven besitzen keine Beine und ernähren sich von Flohkot, Tierkot und Floheiern in der Umgebung — nicht direkt vom Wirt.",
+    "source": "Ordnung Siphonaptera (Flöhe) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0646",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Flöhe (Siphonaptera, allgemein)",
+    "prompt": "Wie wird die häufige Hauterkrankung bei Hund und Katze genannt, die durch eine Allergie gegen Floh-Antigene entsteht?",
+    "options": [
+      "FAD (Floh-Allergie-Dermatitis)",
+      "Otodectose",
+      "Trombiculose",
+      "Cheyletiellose"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "klinik"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "FAD entsteht durch eine gemischte Typ-I/Typ-IV-Allergie gegen Floh-Antigene und ist eine der häufigsten Hauterkrankungen bei Hund und Katze.",
+    "source": "Ordnung Siphonaptera (Flöhe) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0647",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Flöhe (Siphonaptera, allgemein)",
+    "prompt": "Für welchen Bandwurm dienen Flöhe als Zwischenwirt?",
+    "options": [
+      "Dipylidium caninum",
+      "Taenia saginata",
+      "Echinococcus multilocularis",
+      "Diphyllobothrium latum"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "leicht",
+    "explanation": "Flöhe (Ctenocephalides-Arten) sind Zwischenwirt für Dipylidium caninum, den Gurkenkernbandwurm.",
+    "source": "Ordnung Siphonaptera (Flöhe) – Pathogenese/Pathologie/Immunologie/Klinik"
+  },
+  {
+    "id": "q_0648",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Ctenocephalides spp.",
+    "prompt": "Welche Ctenocephalides-Art ist die bei Hund und Katze am häufigsten vorkommende?",
+    "options": [
+      "Ctenocephalides felis",
+      "Ctenocephalides canis",
+      "Pulex irritans",
+      "Archaeopsylla erinacei"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "leicht",
+    "explanation": "Ctenocephalides felis ist die häufigste Flohart sowohl bei Katze als auch bei Hund.",
+    "source": "Ctenocephalides spp. – Vorkommen, Verbreitung"
+  },
+  {
+    "id": "q_0649",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Ctenocephalides spp.",
+    "prompt": "Bei Ctenocephalides felis verlassen die adulten Flöhe den Wirt regelmäßig, ähnlich wie bei den meisten anderen Floharten.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Bei C. felis bleiben die Imagines ständig am Wirt (permanent); nur der Rest der Entwicklung (Ei, Larve, Puppe) findet in der Umgebung statt — eine Besonderheit gegenüber vielen anderen Flöhen.",
+    "source": "Ctenocephalides spp. – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0650",
+    "needsReview": false,
+    "image": null,
+    "type": "multiple_choice",
+    "parasite": "Ctenocephalides spp.",
+    "prompt": "Für welche Erreger sind Ctenocephalides-Flöhe als Vektor beschrieben?",
+    "options": [
+      "Yersinia pestis",
+      "Bartonella henselae",
+      "Rickettsia rickettsii",
+      "Fasciola hepatica"
+    ],
+    "correctIndices": [
+      0,
+      1
+    ],
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "hund",
+        "katze",
+        "mensch"
+      ],
+      "topic": [
+        "epidemiologie"
+      ],
+      "flags": [
+        "zoonose"
+      ]
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Ctenocephalides-Flöhe sind Vektor für Yersinia pestis (Pest) und Bartonella henselae (Katzenkratzkrankheit); Rickettsia rickettsii wird durch Zecken, Fasciola hepatica über Schnecken übertragen.",
+    "source": "Ctenocephalides spp. – Zoonose"
+  },
+  {
+    "id": "q_0651",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Ctenocephalides spp.",
+    "prompt": "Welcher Wirkstoff wirkt als Chitinsynthesehemmer und blockiert die Flohentwicklung zu Larve und Puppe?",
+    "options": [
+      "Lufenuron",
+      "Methopren",
+      "Fipronil",
+      "Permethrin"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "hund",
+        "katze"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Lufenuron ist ein Chitinsynthesehemmer, der die Entwicklung zur Larve/Puppe blockiert; Methopren ist dagegen ein Juvenilhormonantagonist.",
+    "source": "Ctenocephalides spp. – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0652",
+    "needsReview": false,
+    "image": null,
+    "type": "true_false",
+    "parasite": "Ctenocephalides spp.",
+    "prompt": "Bei der Katze dürfen Permethrin, Deltamethrin und Amitraz zur Flohbekämpfung problemlos eingesetzt werden.",
+    "answer": false,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "katze"
+      ],
+      "topic": [
+        "therapie"
+      ],
+      "flags": []
+    },
+    "importance": 3,
+    "difficulty": "mittel",
+    "explanation": "Bei der Katze sind Permethrin, Deltamethrin und Amitraz kontraindiziert (Toxizität).",
+    "source": "Ctenocephalides spp. – Bekämpfung (Prophylaxe, Therapie)"
+  },
+  {
+    "id": "q_0653",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Ceratophyllus gallinae (Hühnerfloh)",
+    "prompt": "Wo hält sich der adulte Ceratophyllus gallinae vorwiegend auf?",
+    "options": [
+      "Im Nest, nur kurz am Wirt für die Blutmahlzeit",
+      "Ständig am Wirt",
+      "Im Wasser",
+      "Im Boden ohne Wirtskontakt"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "gefluegel"
+      ],
+      "topic": [
+        "lebenszyklus"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Die Imagines leben vorwiegend im Nest und suchen den Wirt nur kurz für die Blutmahlzeit auf.",
+    "source": "Ceratophyllus gallinae (Hühnerfloh) – Entwicklung/Epidemiologie"
+  },
+  {
+    "id": "q_0654",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Archaeopsylla erinacei (Igelfloh)",
+    "prompt": "Wer ist der Hauptwirt (Endwirt) von Archaeopsylla erinacei?",
+    "options": [
+      "Igel",
+      "Katze",
+      "Huhn",
+      "Pferd"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "wirte"
+      ],
+      "flags": []
+    },
+    "importance": 1,
+    "difficulty": "leicht",
+    "explanation": "Endwirt ist der Igel; gelegentlich befällt der Igelfloh auch Hund und Mensch.",
+    "source": "Archaeopsylla erinacei (Igelfloh) – Erreger (Name, Morphologie)"
+  },
+  {
+    "id": "q_0655",
+    "needsReview": false,
+    "image": null,
+    "type": "single_choice",
+    "parasite": "Pulex irritans (Menschenfloh)",
+    "prompt": "Woran lässt sich Pulex irritans morphologisch von anderen Flöhen wie Ctenocephalides unterscheiden?",
+    "options": [
+      "Er besitzt keine Stachelkämme (Ctenidien) — „nackter Floh“",
+      "Er hat besonders viele Stachelkämme",
+      "Er hat Flügel",
+      "Er ist deutlich größer als 6 mm"
+    ],
+    "correctIndex": 0,
+    "tags": {
+      "class": [
+        "ektoparasiten"
+      ],
+      "subclass": [
+        "floehe"
+      ],
+      "host": [
+        "mensch"
+      ],
+      "topic": [
+        "morphologie"
+      ],
+      "flags": []
+    },
+    "importance": 2,
+    "difficulty": "mittel",
+    "explanation": "Pulex irritans besitzt im Gegensatz zu Ctenocephalides keine Stachelkämme und wird daher als „nackter Floh“ bezeichnet.",
+    "source": "Pulex irritans (Menschenfloh) – Erreger (Name, Morphologie)"
   }
 ]

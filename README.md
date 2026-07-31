@@ -64,5 +64,6 @@ Accounts + geräteübergreifender Sync (z. B. Supabase), Bestenliste, Admin-UI z
 
 ## Weiterführende Dokumente
 - **`Parasiten-Quiz_Implementation-Plan.md`** — vollständige Spezifikation.
+- **`Parasiten-Katalog.md`** — Checkliste aller 124 Parasiten (Helminthen, Protozoen, Ektoparasiten) mit Wichtigkeit, Wirt, Zoonose, Tags.
 - **`CLAUDE.md`** — verbindliche Kurzreferenz für den Coding-Agent.
 - **`KICKOFF-PROMPT.md`** — Startanweisung für den Coding-Agent.

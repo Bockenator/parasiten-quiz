@@ -56,6 +56,8 @@ Die Quelle liegt als Markdown vor: **`Parasiten.md.md`** (~26.000 Wörter, ~5.25
 
 Diese Feldstruktur ist ein Geschenk: sie mappt fast 1:1 auf die Themen-Dimension (Abschnitt 5) und liefert direkte Fragen-Vorlagen (Lebenszyklus → `ordering`, Endwirt/Zwischenwirt → `matching`, Zoonose → `true_false`, Morphologie/Diagnose → `single_choice`/`image_id`).
 
+**Vollständige Parasiten-Liste:** Alle 124 Parasiten (Helminthen, Protozoen, Ektoparasiten) sind in **`Parasiten-Katalog.md`** aufgelistet (mit Wichtigkeit, Wirt, Zoonose, `class`/`subclass`/`host`/`flags`-Tags). Diese Datei ist die **verbindliche Abdeckungs-Checkliste** — kein Parasit darf fehlen. Verteilung: Helminthen 49 (Trematoden 4 · Zestoden 8 · Nematoden 37) · Protozoen 32 (Flagellaten 7 · Kokzidien 14 · Piroplasmen 11) · Ektoparasiten 43 (Zecken 5 · Milben 12 · Läuse 9 · Sonstige 1 · Fliegen/Mücken 12 · Flöhe 4).
+
 Falls Bilder (z. B. Eier, Morphologie) für Bild-Fragen genutzt werden sollen, separat nach `public/images/` exportieren (die aktuelle Markdown-Quelle enthält nur Text/Tabellen).
 
 ### 3.2 Fragengenerierung durch Opus
